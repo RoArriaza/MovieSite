@@ -55,6 +55,6 @@ El equipo de Front-End Developer ha estado a cargo de investigar, aprender y pon
 
 ##### Lo que nos queda: 
 
-Front-End -> completar la lista de jQuery y afinar detalles en el uso de la API.
+Front-End -> completar la lista de funciones jQuery y afinar detalles en el uso de la API.
 
-UX Design -> Armar la data para Front-End, seleccionar elementos UI (colores, tipografía, etc.), completar ReadMe y preparar presentación final.
+UX Design -> Armar la data para Front-End, seleccionar elementos UI (colores, tipografía, etc.), completar ReadMe y preparar presentación final. Además de colaborar en la implementación de las funciones de jQuery.
