@@ -5,7 +5,8 @@ var data = [
   "libro": "https://www.feriachilenadellibro.cl/catalogsearch/result/?q=harry+potter+y+la+piedra+filosofal",
   // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.
   "genero": "Fantasía, Familiar",
-  "trailer": "https://www.youtube.com/watch?v=uwM2oPGQMl4" // Buscar trailer de película con subtítulos si es en inglés.
+  "trailer": "https://www.youtube.com/watch?v=uwM2oPGQMl4", // Buscar trailer de película con subtítulos si es en inglés.
+  "id": "http://www.omdbapi.com/?i=tt0241527&apikey=276881c0"
   },
   {
   "nombre": "",
@@ -13,8 +14,9 @@ var data = [
   "libro": "",
   // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.
   "genero": "Fantasía, Familiar",
-  "trailer": ""
+  "trailer": "",
   // Buscar trailer de película con subtítulos si es en inglés.
+  "id": ""
   },
   {
   "nombre": "",
@@ -22,8 +24,9 @@ var data = [
   "libro": "",
   // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.
   "genero": "Fantasía, Familiar",
-  "trailer": ""
+  "trailer": "",
   // Buscar trailer de película con subtítulos si es en inglés.
+  "id": ""
   },
   {
   "nombre": "",
@@ -31,8 +34,9 @@ var data = [
   "libro": "",
   // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.
   "genero": "Fantasía, Familiar",
-  "trailer": ""
+  "trailer": "",
   // Buscar trailer de película con subtítulos si es en inglés.
+  "id": ""
   },
   {
   "nombre": "",
@@ -40,7 +44,8 @@ var data = [
   "libro": "",
   // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.
   "genero": "Fantasía, Familiar",
-  "trailer": ""
+  "trailer": "",
   // Buscar trailer de película con subtítulos si es en inglés.
+  "id": ""
   },
 ]
