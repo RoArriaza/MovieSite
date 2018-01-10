@@ -70,4 +70,15 @@ nav .nav-wrapper {
 	padding-top: 30px;
 }
 
+.btnLink {
+	text-align: center;
+}
 
+.linkLibrery {
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+footer {
+	background-color: #EE6E73;
+}
