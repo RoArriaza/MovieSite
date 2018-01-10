@@ -40,7 +40,7 @@ Con esos elementos en mente se ha considerado que:
 
 
 #### Equipo:
-María Paz Thompson (Front-End Developer) - Camila Cornejo (Front-End Developer) - 
+María Paz Thompson (Front-End Developer) - Camila Cornejos (Front-End Developer) - 
 Macarena Araos (UX Design) - Valentina Galleani (UX Design) - Ro Arriaza (UX Design)
 
 El equipo en conjunto ha discutido largamente sobre el producto, valorando ideas y porqués basado en experiencias propias y de amigos, además de información de conocimiento público (internet). Una vez que decidimos la temática sobre la que trataría el site dimos paso a un design sprint (veloz), en que discutimos los elementos que eran necesarios que nuestra página tuviese para facilitar o mejorar la experiencia del user. Cada integrante genero un scketch de las distintas vistas, sobre las que votamos dividiendo el voto en "vista general" y en "elemento específico". Luego rehicimos el scketch seleccionando todos los detalles con mayor votación, lo que dio como resultado las siguientes imágenes:
