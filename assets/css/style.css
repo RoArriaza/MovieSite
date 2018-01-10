@@ -1,0 +1,25 @@
+.mas-vistos{
+	background-color: grey;
+	width: 20em;
+	height: 50em;
+}
+.categorias{
+	font-size: 2.5em;
+}
+
+#busqueda{
+	width: 18.4em;
+
+}
+
+.images{
+	width: 10em;
+	height: auto;
+	background-size: cover;
+}
+
+.images-mas-vistas{
+	width: 4em;
+	height: auto;
+	background-size: cover;
+}
