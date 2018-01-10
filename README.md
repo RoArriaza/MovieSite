@@ -40,7 +40,7 @@ Con esos elementos en mente se ha considerado que:
 
 
 #### Equipo:
-María Paz Thompson (Front-End Developer) - Camila Cornejo (Front-End Developer) - 
+María Paz Thompson (Front-End Developer) - Camila Cornejos (Front-End Developer) - 
 Macarena Araos (UX Design) - Valentina Galleani (UX Design) - Ro Arriaza (UX Design)
 
 El equipo en conjunto ha discutido largamente sobre el producto, valorando ideas y porqués basado en experiencias propias y de amigos, además de información de conocimiento público (internet). Una vez que decidimos la temática sobre la que trataría el site dimos paso a un design sprint (veloz), en que discutimos los elementos que eran necesarios que nuestra página tuviese para facilitar o mejorar la experiencia del user. Cada integrante genero un scketch de las distintas vistas, sobre las que votamos dividiendo el voto en "vista general" y en "elemento específico". Luego rehicimos el scketch seleccionando todos los detalles con mayor votación, lo que dio como resultado las siguientes imágenes:
@@ -51,10 +51,10 @@ El equipo en conjunto ha discutido largamente sobre el producto, valorando ideas
 ###### Pantalla Secundaria:
 ![Pantalla Secundaria](https://image.ibb.co/eX80CR/2_pantalla_pel_cula.jpg)
 
-El equipo de Front-End Developer ha estado a cargo de investigar, aprender y poner en uso la Api de OMDB para implementarla en la página, una página responsive, que ha sido diseña y maqueteada en conjunto por el equipo de UX Design. A día de hoy, miércoles, nuestro equipo se encuentra revisando y comprobando el uso de la API, para evitar problemas o inconvenientes futuros, el equipo de UX se encarga de la redacción del ReadMe y de los detalles finales de la maqueta a la que le serán implementadas las distintas funciones de jQuery.
+El equipo de Front-End Developer ha estado a cargo de investigar, aprender y poner en uso la Api de OMDB para implementarla en la página, una página responsive, que ha sido diseña y maqueteada en conjunto por el equipo de UX Design. A día de hoy, miércoles, nuestro equipo se encuentra revisando y comprobando el uso de la API, para evitar problemas o inconvenientes futuros, el equipo de UX se encarga de la redacción del ReadMe y de la maqueta a la que le serán implementadas las distintas funciones de jQuery.
 
 ##### Lo que nos queda: 
 
-Front-End -> completar la lista de jQuery y afinar detalles en el uso de la API.
+Front-End -> completar la lista de funciones jQuery y afinar detalles en el uso de la API.
 
-UX Design -> Armar la data para Front-End, seleccionar elementos UI (colores, tipografía, etc.), completar ReadMe y preparar presentación final.
+UX Design -> Armar la data para Front-End, seleccionar elementos UI (colores, tipografía, etc.), revisar los detalles que saldrán en la maqueta durante las pruebas de búsqueda, completar ReadMe y preparar presentación final. Además de colaborar en la implementación de las funciones de jQuery y de API.
