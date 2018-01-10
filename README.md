@@ -51,10 +51,10 @@ El equipo en conjunto ha discutido largamente sobre el producto, valorando ideas
 ###### Pantalla Secundaria:
 ![Pantalla Secundaria](https://image.ibb.co/eX80CR/2_pantalla_pel_cula.jpg)
 
-El equipo de Front-End Developer ha estado a cargo de investigar, aprender y poner en uso la Api de OMDB para implementarla en la página, una página responsive, que ha sido diseña y maqueteada en conjunto por el equipo de UX Design. A día de hoy, miércoles, nuestro equipo se encuentra revisando y comprobando el uso de la API, para evitar problemas o inconvenientes futuros, el equipo de UX se encarga de la redacción del ReadMe y de los detalles finales de la maqueta a la que le serán implementadas las distintas funciones de jQuery.
+El equipo de Front-End Developer ha estado a cargo de investigar, aprender y poner en uso la Api de OMDB para implementarla en la página, una página responsive, que ha sido diseña y maqueteada en conjunto por el equipo de UX Design. A día de hoy, miércoles, nuestro equipo se encuentra revisando y comprobando el uso de la API, para evitar problemas o inconvenientes futuros, el equipo de UX se encarga de la redacción del ReadMe y de la maqueta a la que le serán implementadas las distintas funciones de jQuery.
 
 ##### Lo que nos queda: 
 
 Front-End -> completar la lista de funciones jQuery y afinar detalles en el uso de la API.
 
-UX Design -> Armar la data para Front-End, seleccionar elementos UI (colores, tipografía, etc.), completar ReadMe y preparar presentación final. Además de colaborar en la implementación de las funciones de jQuery.
+UX Design -> Armar la data para Front-End, seleccionar elementos UI (colores, tipografía, etc.), revisar los detalles que saldrán en la maqueta durante las pruebas de búsqueda, completar ReadMe y preparar presentación final. Además de colaborar en la implementación de las funciones de jQuery y de API.
