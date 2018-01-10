@@ -1,20 +1,14 @@
 $(document).ready(function () { 
-  $(".button-collapse").sideNav();// Inicialización menú hamburguesa
-  $('.slider').slider(); // Inicialización código carrusel media
-  $.getJSON('http://www.omdbapi.com/?t=Harry+Potter+and+the+Chamber+of+Secrets&apikey=276881c0').then(function(paste) {
-    var poster= $('#poster');
-    var datos= $('#datos');
+  // Inicialización menú hamburguesa
+  $(".button-collapse").sideNav();
 
-    poster.append('<img src="' + paste.Poster + '" alt="poster">');
+  // Inicialización código carrusel media
+  $('.slider').slider();
 
-    datos.append('<h3>' + paste.Title + '</h3> <h4>Año:</h4><p>' 
-                + paste.Year + '</p><h4>Duración: </h4><p>' + paste.Runtime 
-                + '</p><h4>Director:</h4><p>' + paste.Director + '</p><h4>Escritor: </h4><p>' 
-                + paste.Writer + '</p><h4>Actores: </h4><p>' + paste.Actors + '</p><a href="' 
-                + paste.Website + '">Website Oficial</a>');
-  });
+  //carrusel
+  $('.carousel').carousel();
+
 });
-
 
 var searchBtn = $('#searchBtn');
 var titleFld = $('#title');
@@ -35,7 +29,7 @@ searchBtn.click(function searchMovie() {
   });
 });
 
-//
+//obteniendo resultado de la busqueda imprimiendo en consola y pantalla
 function renderMovies (response) {
   console.log(response);
   var movies = response.Search;
@@ -49,23 +43,52 @@ function renderMovies (response) {
 
     console.log([title, imdbID, poster]);
 
-    var moviesList = $('<li class="list-group-item"></li>');
+    var moviesList = $('<li class="list-group-item result"></li>');
     var moviePoster = $('<img src="' + poster + '"width=50px"/>');
     moviesList.append(moviePoster);
-    moviesList.append(title);
-    resultsUl.append(moviesList);
-
-    moviesList.click(renderDetails);
+    moviesList.append('<span>' + title + '</span>');
+    resultsUl.append(moviesList);        
   }
+
+  //obteniendo titulo de cada pelicula 
+  $('.result').click(function () {
+    var str = $(this).text();
+    var replacedStr = str.split(' ').join('+');
+
+    console.log(replacedStr);
+
+    //url que cambiará según el elemento al que se le haga click
+    var newUrl = 'http://www.omdbapi.com/?t=' + replacedStr + '&apikey=276881c0';
+
+    console.log(newUrl);
+
+    $.ajax({
+      type: 'GET',
+      url: newUrl,
+      success: movieInfo,
+      error: renderError
+    });
+
+  //imprimiendo información de la api en pantalla
+    function movieInfo(paste) {
+      var poster= $('#poster');
+      var datos= $('#datos');
+      poster.append('<img src="' + paste.Poster + '" alt="poster">');
+      datos.append('<h3>' + paste.Title + '</h3> <h4>Año:</h4><p>' 
+                  + paste.Year + '</p><h4>Duración: </h4><p>' + paste.Runtime 
+                  + '</p><h4>Director:</h4><p>' + paste.Director 
+                  + '</p><h4>Escritor: </h4><p>' + paste.Writer 
+                  + '</p><h4>Actores: </h4><p>' + paste.Actors 
+                  + '</p><a href="' + paste.Website + '">Website Oficial</a>');
+    }
+  });
 }
 
+//imprimir error en la consola
 function renderError (error) {
   console.log(error);
 }
 
-function renderDetails () {
-  console.log('details');
-}
 
  
 
