@@ -5,9 +5,10 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	<link rel="stylesheet" href="ini">
+	<link rel="stylesheet" href="assets/css/inicial.css">
 </head>
 <body>
+
  <nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Logo</a>
@@ -23,36 +24,63 @@
     </div>
   </nav>
 
-  <section>
-  	<div class="row">
-  		<div class="col l6">
-  			<div class="fotoPrincipal">
-  				<img src="assets/img/millennium-1-cartel.jpg" alt="Movie">
-  			</div>
-  			<div>
-  				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
-  			</div>
-  			<div class="comentario">
-  				<div class="mensajeInicial">
-  					<p>Nombre Usuario</p>
-  					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quod ex, amet veritatis laborum cupiditate non.</p>
-  					<h4 class="post"><strong>Comentarios</strong></h4>
-  					<div class="comenatios">
-  						<form>
-                 <textarea class="txt" id="comment" placeholder="Añade un comentario..." cols="50" rows="1"></textarea><br>
-                 <button type="button" id="btn">Enviar</button>
-              </form>
-  					</div>
-  					<div class="cont">
-  						<div id="#cont2"></div>
-  					</div>
+  <div class="row">
+  	<div class="col l6">
+  		<div class="center">
+  			<img class="principalPhoto" src="assets/img/millennium-1-cartel.jpg" alt="Movie">
+  		</div>
+  		<div class="center">
+  			<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+  		</div>
+  	</div>
+  	<div class="col l6">
+  		<p><h4><strong>Título</strong></h4></p>
+  		<p><h5><strong>Autor</strong></h5></p>
+  		<p><h5><em>Reseña</em></h5></p>
+  		<p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis amet impedit molestiae adipisci sint quidem aliquid repudiandae ea facilis? Consequatur, in neque numquam? Molestias esse asperiores voluptatem sit in, porro!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis amet impedit molestiae adipisci sint quidem aliquid repudiandae ea facilis? Consequatur, in neque numquam? Molestias esse asperiores voluptatem sit in, porro!</p>
+  	</div>
+  	<div>
+  		<button id="btnTrailers">Ver Trailer</button><br>
+  		<button id="btnSeeMovie">Ver Película</button>
+  	</div>
+  </div>
+
+  <div class="row">
+  	<div class="col l6">
+  		<div class="comment">
+  			<div class="initialMessage">
+  				<h4 class="post"><strong>Comentarios</strong></h4>
+  				<div class="comments">
+  					<form action="javascript:saveContact()">
+  						<div class="form-group">
+  							<label for="imputName">Nombre Contacto</label>
+  							<input type="text" class="form-control" id="contactName" placeholder="Ingrese comentario ...">
+  						</div>
+  						<button id="adds">Enviar</button>
+  					</form>
   				</div>
   			</div>
   		</div>
   	</div>
-  </section>
+
+  	<div class="cont"></div>
+
+  	<div class="col l6">
+  		<div class="carruselSagas">
+  			<div class="carousel">
+  			<h5 class="otherMovies">Otras películas de la saga</h5>
+    <a class="carousel-item" href="#one!"><img src="assets/img/millennium1.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="assets/img/millennium2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="assets/img/millennium3.jpg"></a>
+  </div>
+  <a href="https://www.amazon.com/Los-hombres-que-amaban-mujeres/dp/8423342727/ref=sr_1_2?s=books&ie=UTF8&qid=1515556479&sr=1-2&keywords=Los+hombres+que+no+amaban+a+las+mujeres" target="_blank"><p>Amazon</p></a>
+  <a href="https://www.antartica.cl/antartica/servlet/LibroServlet?action=fichaLibro&id_libro=180189"><p>Librería Antártica</p></a>
+  		</div>
+  	</div>
+  </div>
 
 
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script src="https://use.fontawesome.com/53a473cc15.js"></script>
 	<script src="assets/js/inicial.js"></script>
