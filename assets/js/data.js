@@ -6,7 +6,7 @@ var data = [
   // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.
   "genero": "Fantasía, Familiar",
   "trailer": "https://www.youtube.com/watch?v=uwM2oPGQMl4", // Buscar trailer de película con subtítulos si es en inglés.
-  "id": "http://www.omdbapi.com/?i=tt0241527&apikey=276881c0"
+  "id": "tt0241527"
   },
   {
   "nombre": "",
