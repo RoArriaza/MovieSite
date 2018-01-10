@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta charset="UTF-8">
@@ -7,86 +8,92 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<link rel="stylesheet" href="assets/css/inicial.css">
 </head>
+
 <body>
-
+	<!-- Nav -->
 	<nav>
-		<div class="nav-wrapper">
-			<a href="#!" class="brand-logo">Logo</a>
-			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-			<ul class="right hide-on-med-and-down">
-				<li><a href="collapsible.html">Iniciar Sesion</a></li>
-				<li><a href="mobile.html">¿Quienes Somos?</a></li>
-			</ul>
-			<ul class="side-nav" id="mobile-demo">
-				<li><a href="collapsible.html">Iniciar Sesion</a></li>
-				<li><a href="mobile.html">¿Quienes Somos?</a></li>
-			</ul>
-		</div>
-	</nav>
+<div class="nav-wrapper">
+	<a href="#!" class="brand-logo">Logo</a>
+	<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+	<ul class="right hide-on-med-and-down">
+		<li><a href="collapsible.html">About Us</a></li>
+		<li><a href="mobile.html">Log In</a></li>
+	</ul>
+	<ul class="side-nav" id="mobile-demo">
+		<li><a href="collapsible.html">About Us</a></li>
+		<li><a href="mobile.html">Log In</a></li>
+	</ul>
+</div>
+</nav>
 
-	<div class="row">
-		<div class="col s12 col m12 col l6 col xl6">
-			<div class="center">
-				<img class="principalPhoto" src="assets/img/millennium-1-cartel.jpg" alt="Movie">
-			</div>
-			<div class="center">
-				<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
-			</div>
-		</div>
-		<div class="col s12 col m12 col l6 col xl6">
-			<p><h4><strong>Título</strong></h4></p>
-			<p><h5><strong>Autor</strong></h5></p>
-			<p><h5><em>Reseña</em></h5></p>
-			<p class="review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis amet impedit molestiae adipisci sint quidem aliquid repudiandae ea facilis? Consequatur, in neque numquam? Molestias esse asperiores voluptatem sit in, porro!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis amet impedit molestiae adipisci sint quidem aliquid repudiandae ea facilis? Consequatur, in neque numquam? Molestias esse asperiores voluptatem sit in, porro!</p>
-		</div>
-		<div class="movie">
-			<iframe class="trailerMovie" width="400" height="250" src="https://www.youtube.com/embed/XDHd8jItwxc?rel=0&amp;controls=0&amp;showinfo=0"></iframe><br>
-		</div>
-	</div>
+	<!-- Fín nav -->
 
-	<div class="row">
-		<div class="col s12 col m12 col l6 col xl6">
-			<div class="comment">
-				<div class="initialMessage">
-					<h4 class="post"><strong>Comentarios</strong></h4>
-					<div class="comments">
-						<form action="javascript:saveContact()">
-							<div class="form-group">
-								<label for="imputName">Nombre Contacto</label>
-								<input type="text" class="form-control" id="contactName" placeholder="Ingrese comentario ...">
-							</div>
-							<button id="adds">Enviar</button>
-						</form>
+
+	<div class="container">
+		<div class="row postMovie">
+			<!-- Div para imagen de portada -->
+			<div class="col s12 m12 l5 xl5">
+				<div class="center">
+					<div id="poster" class='poster'></div>
+					<div id="rating"></div>
+				</div>
+			</div>
+			<!-- Datos extraidos de API -->
+			<div class="col s12 m12 l7 xl7">
+				<!-- título de película -->
+				<div class="center title" id="titulo"></div>
+				<!-- datos de película -->
+				<div class="datos" id="datos"></div>
+				<!-- botones de compras en línea -->
+				<div class="row">
+					<div class="center">
+  			<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+  		</div>
+				</div>
+				<button id="btnEbook" class="canvas btn" href="https://www.amazon.com/Los-hombres-que-amaban-mujeres/dp/8423342727/ref=sr_1_2?s=books&ie=UTF8&qid=1515556479&sr=1-2&keywords=Los+hombres+que+no+amaban+a+las+mujeres" target="_blank">Amazon ebook</button>
+				<button id="btnBook" href="https://www.antartica.cl/antartica/servlet/LibroServlet?action=fichaLibro&id_libro=180189" target="_blank">Buy the Book</button>
+			</div>
+		</div>
+		<div class="row">
+			<!-- Video de Youtube -->
+			<div class="col s12 m12 l6 xl6">
+				<iframe width="400" height="250" src="https://www.youtube.com/embed/7mesEL9iV_o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="videoYtb"></iframe>
+			</div>
+			<!-- Carrusel con las demás películas de la saga -->
+			<div class="col s12 m12 l6 xl6">
+				<div class="carruselSagas">
+					<div class="carousel">
+						<!-- Imágenes que van al carrusel. -->
+						<a class="carousel-item" href="#one!"><img src="assets/img/millennium1.jpg"></a>
+						<a class="carousel-item" href="#two!"><img src="assets/img/millennium2.jpg"></a>
+						<a class="carousel-item" href="#three!"><img src="assets/img/millennium3.jpg"></a>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="cont"></div>
-
-		<div class="col s12 col m12 col l6 col xl6">
-			<div class="carruselSagas">
-				<div class="carousel">
-					<h5 class="otherMovies">Otras películas de la saga</h5>
-					<a class="carousel-item" href="#one!"><img src="assets/img/millennium1.jpg"></a>
-					<a class="carousel-item" href="#two!"><img src="assets/img/millennium2.jpg"></a>
-					<a class="carousel-item" href="#three!"><img src="assets/img/millennium3.jpg"></a>
+		<div class="row">
+			<div class="col s12 m12 l12 xl12">
+				<h4 class="post"><strong>Comments</strong></h4>
+				<div class="inputComment">
+					<form action="javascript:saveContact()">
+						<div class="form-group">
+							<input type="text" class="form-control" id="contactName" placeholder="Just tipe your comment.">
+						</div>
+						<button id="adds">Enviar</button>
+					</form>
 				</div>
-				<div class="btnLink">
-				<button class="linkLibrery"><a href="https://www.amazon.com/Los-hombres-que-amaban-mujeres/dp/8423342727/ref=sr_1_2?s=books&ie=UTF8&qid=1515556479&sr=1-2&keywords=Los+hombres+que+no+amaban+a+las+mujeres" target="_blank"><p>Amazon</p></a></button>
-				<button class="linkLibrery"><a href="https://www.antartica.cl/antartica/servlet/LibroServlet?action=fichaLibro&id_libro=180189"><p>Librería Antártica</p></a></button>
-				</div>
+				<!-- contenedor de posts. -->
+				<div id="containerPosts"></div>
 			</div>
 		</div>
 	</div>
 
-	<footer class="foot">
-	</footer>
 
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script src="https://use.fontawesome.com/53a473cc15.js"></script>
-	<script src="assets/js/apps.js"></script>
+	<script src="assets/js/inicial.js"></script>
 </body>
+
 </html>

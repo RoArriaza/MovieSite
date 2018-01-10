@@ -18,15 +18,20 @@ nav .nav-wrapper {
 	text-align: center;
 }
 
-.fa-star:before {
-	content: "\f005";
-	font-size: 30px;
+.fa-star {
+	font-size: 2.3em;
 	padding-right: 10px;
 	color: #afaeae;
+	-webkit-transition: font-size 1s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 1s;
+}
+
+.fa-star:hover{
+	font-size: 2.34em;
+	color:#ffbf00;
 }
 
 .comment {
-	border: 1px solid gray;
 	width: 100%;
 	height: auto;
 	margin-top: 20px;
@@ -36,23 +41,18 @@ nav .nav-wrapper {
 	text-align: left;
 }
 
-#btnTrailers {
+.btn{
 	margin-top: 20px;
 	margin-bottom: 10px;
 	margin-left: 10px;
+	padding: 0.4em;
 }
 
-#btnSeeMovie {
-	margin-left: 10px;
-}
+
 
 .carruselSagas {
 	width: 100%;
-	height: 500px;
-	border: 1px solid #eaeaea;
-	border-right: none;
-	border-left: none;
-	border-bottom: none;
+	height:300px;
 }
 
 .carousel-slider {
@@ -81,4 +81,18 @@ nav .nav-wrapper {
 
 footer {
 	background-color: #EE6E73;
+}
+
+.postMovie{
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.h6bigger{
+	font-size: 1.5em;
+	font-weight: bold;
+
+}
+.videoYtb{
+	margin-top: 7em;
 }

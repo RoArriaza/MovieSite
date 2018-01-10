@@ -1,4 +1,4 @@
-$(document).ready(function () { 
+$(document).ready(function () {
   // Inicialización menú hamburguesa
   $(".button-collapse").sideNav();
 
@@ -15,7 +15,7 @@ var titleFld = $('#title');
 
 /*función para acceder a la información de la api tomando el valor del
 * texto ingresado en el input (búsqueda)
-*/ 
+*/
 searchBtn.click(function searchMovie() {
   var titleText = titleFld.val();
   alert('listo');
@@ -47,10 +47,10 @@ function renderMovies (response) {
     var moviePoster = $('<img src="' + poster + '"width=50px"/>');
     moviesList.append(moviePoster);
     moviesList.append('<span>' + title + '</span>');
-    resultsUl.append(moviesList);        
+    resultsUl.append(moviesList);
   }
 
-  //obteniendo titulo de cada pelicula 
+  //obteniendo titulo de cada pelicula
   $('.result').click(function () {
     var str = $(this).text();
     var replacedStr = str.split(' ').join('+');
@@ -74,11 +74,11 @@ function renderMovies (response) {
       var poster= $('#poster');
       var datos= $('#datos');
       poster.append('<img src="' + paste.Poster + '" alt="poster">');
-      datos.append('<h3>' + paste.Title + '</h3> <h4>Año:</h4><p>' 
-                  + paste.Year + '</p><h4>Duración: </h4><p>' + paste.Runtime 
-                  + '</p><h4>Director:</h4><p>' + paste.Director 
-                  + '</p><h4>Escritor: </h4><p>' + paste.Writer 
-                  + '</p><h4>Actores: </h4><p>' + paste.Actors 
+      datos.append('<h3>' + paste.Title + '</h3> <h4>Año:</h4><p>'
+                  + paste.Year + '</p><h4>Duración: </h4><p>' + paste.Runtime
+                  + '</p><h4>Director:</h4><p>' + paste.Director
+                  + '</p><h4>Escritor: </h4><p>' + paste.Writer
+                  + '</p><h4>Actores: </h4><p>' + paste.Actors
                   + '</p><a href="' + paste.Website + '">Website Oficial</a>');
     }
   });
@@ -88,8 +88,3 @@ function renderMovies (response) {
 function renderError (error) {
   console.log(error);
 }
-
-
- 
-
-        
