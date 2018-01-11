@@ -8,6 +8,8 @@ $(document).ready(function () {
   //carrusel
   $('.carousel').carousel();
 
+  //modal
+  $('.modal').modal();  
 });
 
 var searchBtn = $('#searchBtn');
@@ -88,3 +90,26 @@ function renderMovies (response) {
 function renderError (error) {
   console.log(error);
 }
+
+/* agregando comentarios
+* Primera función para click en boton enviar
+*/
+$('#adds').click(function addCommentClick() {
+  var newComments = $('#contactName').val();
+  $('#containerPosts').prepend('<div class="newComment">'
+        + '<p class="">' + newComments + '</p>'
+        +'</div>')
+      $('#contactName').val('');
+});
+
+//Funcion para agregar comentario con enter
+$('#contactName').keyup(function addCommentKey(e) {
+  if(e.keyCode == 13){
+    var newComment = $(this).val();
+    $('#containerPosts').prepend('<div class="newComment">'
+        + '<p>' + newComment + '</p>'
+        +'</div>')
+      $(this).val('');
+  }
+});
+     

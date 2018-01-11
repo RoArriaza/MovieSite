@@ -21,23 +21,26 @@
 	</ul>
 	<ul class="side-nav" id="mobile-demo">
 		<li><a href="collapsible.html">About Us</a></li>
-		<li><a class=" modal-trigger" href="#modal1" id="register">Log In</a></li>
+		<li><a class="modal-trigger" href="#modal1" id="register">Log In</a></li>
 	</ul>
 </div>
 </nav>
 
 	<!-- Fín nav -->
 	<!-- Modal -->
-
-	<!-- Modal Trigger -->
-	  <!-- Modal Structure -->
 	  <div id="modal1" class="modal">
 	    <div class="modal-content">
-	      <h4>Modal Header</h4>
-	      <p>A bunch of text</p>
+	      <div class="input-field col s6">
+          <input placeholder="email@example.com" id="first_name" type="text" class="validate">
+          <label for="first_name">Your email</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">Password</label>
+        </div>
 	    </div>
 	    <div class="modal-footer">
-	      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+	      <a class="waves-effect waves-light btn logInBtn">Log in</a>
 	    </div>
 	  </div>
 
@@ -108,6 +111,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script src="https://use.fontawesome.com/53a473cc15.js"></script>
 	<script src="assets/js/inicial.js"></script>
+	<script src="assets/js/apps.js"></script>
 </body>
 
 </html>

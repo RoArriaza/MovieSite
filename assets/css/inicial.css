@@ -10,6 +10,20 @@ nav .nav-wrapper {
 	background-color: ;
 }
 
+/*modal*/
+.modal{
+	width: 20%;
+}
+
+.modal div:last-child{
+	text-align: center;
+}
+
+.btn{
+	padding: 0 0.8em;
+}
+/*fin modal*/
+
 .principalPhoto {
 	width: 45%;
 	height: auto;
