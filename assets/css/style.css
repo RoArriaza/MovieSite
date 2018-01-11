@@ -7,9 +7,8 @@
 	font-size: 2.5em;
 }
 
-#busqueda{
-	width: 18.4em;
-
+.input-field input[type=search]{
+	padding-left: 3em;
 }
 
 .images{
