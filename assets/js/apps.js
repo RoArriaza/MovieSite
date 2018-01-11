@@ -13,31 +13,30 @@ $(document).ready(function () {
   
 });
 
+var searchBtn = $('#searchBtn');
 var titleFld = $('.search');
 
 /*función para acceder a la información de la api tomando el valor del
 * texto ingresado en el input (búsqueda)
 */
-titleFld.keyup(function searchMovie() {
-  if(e.keyCode == 13){
-    var titleText = titleFld.val();
-    alert('listo');
-    var url = "http://www.omdbapi.com/?apikey=276881c0&s=" + titleText;
-    console.log(url);
-    $.ajax({
-      type: 'GET',
-      url: url,
-      success: renderMovies,
-      error: renderError
-    });
-  }  
+searchBtn.click(function searchMovie() {
+  var titleText = titleFld.val();
+  alert('listo');
+  var url = "http://www.omdbapi.com/?apikey=276881c0&s=" + titleText;
+  console.log(url);
+  $.ajax({
+    type: 'GET',
+    url: url,
+    success: renderMovies,
+    error: renderError
+  });
 });
 
 //obteniendo resultado de la busqueda imprimiendo en consola y pantalla
 function renderMovies (response) {
   console.log(response);
   var movies = response.Search;
-  var resultsUl = $('.results');
+  var resultsUl = $('#results');
   resultsUl.empty();
   for (var m in movies) {
     var movie = movies[m];
@@ -47,15 +46,18 @@ function renderMovies (response) {
 
     console.log([title, imdbID, poster]);
 
-    var moviesList = $('<li class="list-group-item result"></li>');
-    var moviePoster = $('<img src="' + poster + '"width=50px"/>');
+    var moviesList = $('<div class="col l4 result"></div>');
+    var moviePoster = $('<div style="margin-top:1em;">'
+                      +'<img class="col l3" src="' + poster 
+                      + 'style="width:50%;"/>' + '</div>');
     moviesList.append(moviePoster);
-    moviesList.append('<span>' + title + '</span>');
+    moviesList.append('<span class="col l9" style="margin-top:2.5em;">' 
+                      + title + '</span>');
     resultsUl.append(moviesList);
   }
 
   //obteniendo titulo de cada pelicula
-  $('.result').click(function () {
+  $('.resultList').click(function () {
     var str = $(this).text();
     var replacedStr = str.split(' ').join('+');
 
