@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/inicial.css">
+	<!-- Añadiendo el estilo de estrellas de valoración -->
+	<link rel="stylesheet" href="assets/css/star-rating.min.css">
 </head>
 
 <body>
@@ -68,7 +70,14 @@
 				<!-- botones de compras en línea -->
 				<div class="row">
 					<div class="center">
-						<i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+						<select id="star-rating">
+							<option value="">Select a rating</option>
+							<option value="5">Excellent</option>
+							<option value="4">Very Good</option>
+							<option value="3">Average</option>
+							<option value="2">Poor</option>
+							<option value="1">Terrible</option>
+						</select>
 					</div>
 				</div>
 				<button id="btnEbook" class="canvas btn" href="https://www.amazon.com/Los-hombres-que-amaban-mujeres/dp/8423342727/ref=sr_1_2?s=books&ie=UTF8&qid=1515556479&sr=1-2&keywords=Los+hombres+que+no+amaban+a+las+mujeres" target="_blank">Amazon ebook</button>
@@ -118,6 +127,9 @@
 	<script src="https://use.fontawesome.com/53a473cc15.js"></script>
 	<script src="assets/js/inicial.js"></script>
 	<script src="assets/js/apps.js"></script>
+	<script type="text/javascript" src="assets/js/star-rating.min.js">
+
+	</script>
 </body>
 
 </html>

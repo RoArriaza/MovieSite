@@ -12,9 +12,22 @@ $(document).ready(function () {
   $('.modal').modal();
 
   pasteMoreSeen();
+// Estrellas de valoración
+  $('#star-rating').starrating();
+  $( '#star-rating' ).starrating({
+  clearable : true,
+  initialText: "Click to Rate",
+  onClick : null,
+  showText : true,
+  });
+
   printFantasyMovies();
   printActionMovies();
   printSciFiMovies();
+
+
+
+
 });
 
 var titleFld = $('.search');
@@ -42,11 +55,11 @@ console.log(data);
 
 //funciones para filtrar peliculas de la data segun categoria y mostrar en index.html
 function printFantasyMovies() {
-  var imgCategory = $('#movieImgs1'); 
+  var imgCategory = $('#movieImgs1');
   for (var i = 0; i < data.length; i++) {
     if (data[i].genero === 'Fantasía, Familiar' || data[i].genero === 'Fantasía, Drama') {
-      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster' 
-                        + '"> <h5>' + data[i].nombre +'</h5> <p style="font-weight=bold">' 
+      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster'
+                        + '"> <h5>' + data[i].nombre +'</h5> <p style="font-weight=bold">'
                         + 'paste.Year' + '</p> </div>');
     }
   }
@@ -57,8 +70,8 @@ function printActionMovies() {
   var imgCategory = $('#movieImgs2');
   for(var j = 0; j < data.length; j++) {
     if (data[j].genero === 'Fantasía, Acción') {
-      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster' 
-                        + '"> <h5>' + data[j].nombre +'</h5> <p style="font-weight=bold">' 
+      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster'
+                        + '"> <h5>' + data[j].nombre +'</h5> <p style="font-weight=bold">'
                         + 'paste.Year' + '</p> </div>');
     }
   }
@@ -69,8 +82,8 @@ function printSciFiMovies() {
   var imgCategory = $('#movieImgs3');
   for(var k = 0; k < data.length; k++) {
     if (data[k].genero === 'Sci-Fi') {
-      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster' 
-                        + '"> <h5>' + data[k].nombre +'</h5> <p style="font-weight=bold">' 
+      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster'
+                        + '"> <h5>' + data[k].nombre +'</h5> <p style="font-weight=bold">'
                         + 'paste.Year' + '</p> </div>');
     }
   }
