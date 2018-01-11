@@ -6,7 +6,7 @@ var data = [
   "libro": "https://www.bookdepository.com/Harry-Potter-and-the-Philosophers-Stone-J-K-Rowling/9781408855652?ref=grid-view&qid=1515605891764&sr=1-2",
   // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.
   "genero": "Fantasía, Familiar",
-  "trailer": "https://www.youtube.com/embed/VyHV0BRtdxo?rel=0&amp;controls=0&amp;showinfo=0" // Buscar trailer de película con subtítulos si es en inglés.
+  "trailer": "https://www.youtube.com/embed/VyHV0BRtdxo?rel=0&amp;controls=0&amp;showinfo=0", // Buscar trailer de película con subtítulos si es en inglés.
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0241527"
   },
@@ -594,7 +594,7 @@ var data = [
   },
 
  {
-  "nombre": "Fantastic Beasts 2: The crimes of Grindenwald"
+  "nombre": "Fantastic Beasts 2: The crimes of Grindenwald",
   "ebook": "https://www.amazon.com/s/ref=nb_sb_noss_2?__mk_es_US=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=Fantastic+Beasts+and+Where+to+Find+Them+ebook&rh=i%3Aaps%2Ck%3AFantastic+Beasts+and+Where+to+Find+Them+ebook",
   "libro": "https://www.bookdepository.com/search?searchTerm=fantastic+beasts&search=Find+book",
   // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.

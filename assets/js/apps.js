@@ -13,30 +13,31 @@ $(document).ready(function () {
   
 });
 
-var searchBtn = $('#searchBtn');
-var titleFld = $('#title');
+var titleFld = $('.search');
 
 /*función para acceder a la información de la api tomando el valor del
 * texto ingresado en el input (búsqueda)
 */
-searchBtn.click(function searchMovie() {
-  var titleText = titleFld.val();
-  alert('listo');
-  var url = "http://www.omdbapi.com/?apikey=276881c0&s=" + titleText;
-  console.log(url);
-  $.ajax({
-    type: 'GET',
-    url: url,
-    success: renderMovies,
-    error: renderError
-  });
+titleFld.keyup(function searchMovie() {
+  if(e.keyCode == 13){
+    var titleText = titleFld.val();
+    alert('listo');
+    var url = "http://www.omdbapi.com/?apikey=276881c0&s=" + titleText;
+    console.log(url);
+    $.ajax({
+      type: 'GET',
+      url: url,
+      success: renderMovies,
+      error: renderError
+    });
+  }  
 });
 
 //obteniendo resultado de la busqueda imprimiendo en consola y pantalla
 function renderMovies (response) {
   console.log(response);
   var movies = response.Search;
-  var resultsUl = $('#results');
+  var resultsUl = $('.results');
   resultsUl.empty();
   for (var m in movies) {
     var movie = movies[m];
