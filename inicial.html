@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/inicial.css">
 </head>
 
@@ -92,11 +93,15 @@
 			<div class="col s12 m12 l12 xl12">
 				<h4 class="post"><strong>Comments</strong></h4>
 				<div class="inputComment">
-					<form action="javascript:saveContact()">
-						<div class="form-group">
-							<input type="text" class="form-control" id="contactName" placeholder="Just tipe your comment.">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s12">
+								<textarea id="saveComment" class="materialize-textarea" placeholder="Just tipe your comment."></textarea>
+							</div>
+							<button class="btn waves-effect waves-light" name="action" id="adds">Submit
+						    <i class="material-icons right">send</i>
+						  </button>
 						</div>
-						<button id="adds">Enviar</button>
 					</form>
 				</div>
 				<!-- contenedor de posts. -->

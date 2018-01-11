@@ -9,7 +9,8 @@ $(document).ready(function () {
   $('.carousel').carousel();
 
   //modal
-  $('.modal').modal();  
+  $('.modal').modal();
+  
 });
 
 var searchBtn = $('#searchBtn');
@@ -95,15 +96,15 @@ function renderError (error) {
 * Primera función para click en boton enviar
 */
 $('#adds').click(function addCommentClick() {
-  var newComments = $('#contactName').val();
+  var newComments = $('#saveComment').val();
   $('#containerPosts').prepend('<div class="newComment">'
         + '<p class="">' + newComments + '</p>'
         +'</div>')
-      $('#contactName').val('');
+      $('#saveComment').val('');
 });
 
 //Funcion para agregar comentario con enter
-$('#contactName').keyup(function addCommentKey(e) {
+$('#saveComment').keyup(function addCommentKey(e) {
   if(e.keyCode == 13){
     var newComment = $(this).val();
     $('#containerPosts').prepend('<div class="newComment">'
