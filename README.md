@@ -22,7 +22,7 @@ En ese contexto, nace "SagaMovie", que pretende organizar y categorizar todas aq
 
 
 Teniendo presente esto, se ha establecido que un target de usuarios que: 
-* Tiene entre un rango de edad entre 17 y 45 años. 
+* Tiene entre un rango de edad entre 17 y 35 años. 
 * Son personas que tienen una inclinación hacia la lectura. 
 * Personas que disfrutan del cine. 
 * Personas que quieren saber sobre aquello que les atrae. 
