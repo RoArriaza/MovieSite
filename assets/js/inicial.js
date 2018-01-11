@@ -15,7 +15,17 @@
 
      rating.append('<div style="background-color:#ffbf00; border-radius: 20px; width:8em; padding:0.3em; text-align:center; margin-top: 1em; display: inline-block;"> <h6 class="h6bigger">Rating:</h6><p style="font-size:1em;"><strong>'+ paste.imdbRating +'</strong> </p></div>');
 
-
-
-
    });
+
+   $(function () {
+
+        //initialize all modals
+        $('.modal').modal();
+
+        //now you can open modal from code
+        $('#modal1').modal('open');
+
+        //or by click on trigger
+        $('.trigger-modal').modal();
+
+    });
