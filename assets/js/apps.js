@@ -10,7 +10,7 @@ $(document).ready(function () {
 
   //modal
   $('.modal').modal();
-  
+
 });
 
 var searchBtn = $('#searchBtn');
@@ -46,19 +46,18 @@ function renderMovies (response) {
 
     console.log([title, imdbID, poster]);
 
-    var moviesList = $('<div class="col l4 resultList"></div>');
+    var moviesList = $('<div class="col l4 result"></div>');
     var moviePoster = $('<div style="margin-top:1em;">'
-                      +'<img class="col l3" src="' + poster 
+                      +'<img class="col l3" src="' + poster
                       + 'style="width:50%;"/>' + '</div>');
     moviesList.append(moviePoster);
-    moviesList.append('<span class="col l9" style="margin-top:2.5em;">' 
+    moviesList.append('<span class="col l9" style="margin-top:2.5em;">'
                       + title + '</span>');
     resultsUl.append(moviesList);
   }
 
   //obteniendo titulo de cada pelicula
   $('.resultList').click(function () {
-    window.location.href="inicial.html";
     var str = $(this).text();
     var replacedStr = str.split(' ').join('+');
 
@@ -117,4 +116,5 @@ $('#saveComment').keyup(function addCommentKey(e) {
       $(this).val('');
   }
 });
-     
+
+// Agregar sección lo más visto.
