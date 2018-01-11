@@ -11,6 +11,15 @@
 	padding-left: 3em;
 }
 
+.bright{
+	-webkit-filter: brightness(0.5); /* Safari */
+	 filter: brightness(0.5);
+}
+
+.totheButtom{
+	margin-top: 12%;
+}
+
 .images{
 	width: 10em;
 	height: auto;
