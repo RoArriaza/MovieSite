@@ -12,16 +12,18 @@
 <body>
   <!-- Nav -->
   <nav>
-    <div class="nav-wrapper #212121 grey darken-4">
-      <a href="#!" class="brand-logo">Logo</a>
+    <div class="nav-wrapper grey darken-4">
+      <a href="index.html" class="brand-logo">Logo</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
         <li><a class="modal-trigger" href="#modal1" id="register">Log In</a></li>
-        <li><a href="badges.html">About Us</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
         <li><a class="modal-trigger" href="#modal1" id="register">Log In</a></li>
-        <li><a href="badges.html">About Us</a></li>
       </ul>
     </div>
   </nav>
@@ -92,9 +94,6 @@
             <div class="input-field">
               <input class="search" type="search">
               <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-              <button class="btn waves-effect waves-light" name="action" id="searchBtn">Submit
-                <i class="material-icons right">send</i>
-              </button>
             </div>
           </form>
         </div>
@@ -119,7 +118,7 @@
           <h3 id="categoria"></h3>
           <!-- Div para ingresar cada película -->
           <div class="row" id="movieImgs">
-
+            
           </div>
         </div>
         <div class="col s12 m4 x4 xl4">
@@ -135,9 +134,10 @@
   <!-- script -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-  <script src="assets/js/apps.js"></script>
   <script type="text/javascript" src="assets/js/data.js">
   </script>
+  <script src="assets/js/apps.js"></script>
+  
 </body>
 
 </html>

@@ -10,29 +10,37 @@ $(document).ready(function () {
 
   //modal
   $('.modal').modal();
-
 });
 
-var searchBtn = $('#searchBtn');
 var titleFld = $('.search');
 
 /*función para acceder a la información de la api tomando el valor del
 * texto ingresado en el input (búsqueda)
 */
-searchBtn.click(function searchMovie() {
-  var titleText = titleFld.val();
-  alert('listo');
-  var url = "http://www.omdbapi.com/?apikey=276881c0&s=" + titleText;
-  console.log(url);
-  $.ajax({
-    type: 'GET',
-    url: url,
-    success: renderMovies,
-    error: renderError
-  });
+titleFld.keyup(function searchMovie(e) {
+  if(e.keyCode == 13){
+    var titleText = titleFld.val();
+    var url = "http://www.omdbapi.com/?apikey=276881c0&s=" + titleText;
+    console.log(url);
+    $.ajax({
+      type: 'GET',
+      url: url,
+      success: renderMovies,
+      error: renderError
+    });
+  }
 });
 
-//obteniendo resultado de la busqueda imprimiendo en consola y pantalla
+//accediendo a data
+console.log(data);
+var moviesCont = $('#movieImgs');
+
+function printMovies() {
+
+}
+
+
+//obteniendo resultado de la busqueda imprimiendo en consola y pantalla (index.html)
 function renderMovies (response) {
   console.log(response);
   var movies = response.Search;
@@ -46,7 +54,7 @@ function renderMovies (response) {
 
     console.log([title, imdbID, poster]);
 
-    var moviesList = $('<div class="col l4 result"></div>');
+    var moviesList = $('<div class="col l4 resultList"></div>');
     var moviePoster = $('<div style="margin-top:1em;">'
                       +'<img class="col l3" src="' + poster
                       + 'style="width:50%;"/>' + '</div>');
@@ -54,10 +62,14 @@ function renderMovies (response) {
     moviesList.append('<span class="col l9" style="margin-top:2.5em;">'
                       + title + '</span>');
     resultsUl.append(moviesList);
+    titleFld.val('');
   }
 
-  //obteniendo titulo de cada pelicula
+  //agregando contenido dinamico en categorías
+
+  //obteniendo información (titulo de cada pelicula) para mostrar en inicial.html 
   $('.resultList').click(function () {
+    window.location.href="inicial.html"
     var str = $(this).text();
     var replacedStr = str.split(' ').join('+');
 
@@ -75,7 +87,7 @@ function renderMovies (response) {
       error: renderError
     });
 
-  //imprimiendo información de la api en pantalla
+  //imprimiendo información de la api en pantalla (inicial.html)
     function movieInfo(paste) {
       var poster= $('#poster');
       var datos= $('#datos');
@@ -94,6 +106,7 @@ function renderMovies (response) {
 function renderError (error) {
   console.log(error);
 }
+
 
 /* agregando comentarios
 * Primera función para click en boton enviar
