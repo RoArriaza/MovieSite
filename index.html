@@ -16,16 +16,32 @@
       <a href="#!" class="brand-logo">Logo</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Log In</a></li>
+        <li><a class="modal-trigger" href="#modal1" id="register">Log In</a></li>
         <li><a href="badges.html">About Us</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Log In</a></li>
+        <li><a class="modal-trigger" href="#modal1" id="register">Log In</a></li>
         <li><a href="badges.html">About Us</a></li>
       </ul>
     </div>
   </nav>
   <!-- Fín nav -->
+  <!-- Modal -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div class="input-field col s6">
+          <input placeholder="email@example.com" id="first_name" type="text" class="validate">
+          <label for="first_name">Your email</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">Password</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-light btn logInBtn">Log in</a>
+      </div>
+    </div>
 
   <!-- Carrusel -->
   <div class="slider">
@@ -88,8 +104,6 @@
       </div>
     </div>
   </section>
-
-
 
   <!-- Peliculas por categorías-->
   <section>
