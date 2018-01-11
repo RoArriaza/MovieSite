@@ -12,6 +12,9 @@ $(document).ready(function () {
   $('.modal').modal();
 
   pasteMoreSeen();
+  printFantasyMovies();
+  printActionMovies();
+  printSciFiMovies();
 });
 
 var titleFld = $('.search');
@@ -35,10 +38,43 @@ titleFld.keyup(function searchMovie(e) {
 
 //accediendo a data
 console.log(data);
-var moviesCont = $('#movieImgs');
 
-function printMovies() {
 
+//funciones para filtrar peliculas de la data segun categoria y mostrar en index.html
+function printFantasyMovies() {
+  var imgCategory = $('#movieImgs1'); 
+  for (var i = 0; i < data.length; i++) {
+    if (data[i].genero === 'Fantasía, Familiar' || data[i].genero === 'Fantasía, Drama') {
+      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster' 
+                        + '"> <h5>' + data[i].nombre +'</h5> <p style="font-weight=bold">' 
+                        + 'paste.Year' + '</p> </div>');
+    }
+  }
+  $('#categoria1').append('<h3>Fantasy</h3>');
+}
+
+function printActionMovies() {
+  var imgCategory = $('#movieImgs2');
+  for(var j = 0; j < data.length; j++) {
+    if (data[j].genero === 'Fantasía, Acción') {
+      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster' 
+                        + '"> <h5>' + data[j].nombre +'</h5> <p style="font-weight=bold">' 
+                        + 'paste.Year' + '</p> </div>');
+    }
+  }
+  $('#categoria2').append('<h3>Action</h3>');
+}
+
+function printSciFiMovies() {
+  var imgCategory = $('#movieImgs3');
+  for(var k = 0; k < data.length; k++) {
+    if (data[k].genero === 'Sci-Fi') {
+      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster' 
+                        + '"> <h5>' + data[k].nombre +'</h5> <p style="font-weight=bold">' 
+                        + 'paste.Year' + '</p> </div>');
+    }
+  }
+  $('#categoria3').append('<h3>Sci Fi</h3>');
 }
 
 
