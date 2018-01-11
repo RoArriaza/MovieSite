@@ -2,7 +2,7 @@
 ### Un sitio dedicado a las sagas de películas basadas en libros de ayer y hoy
 
 #### ¿Qué es "SagaMovie"?
-Es una aplicación web (responsive) que permite a los usuarios encontrar información sobre películas que forman parte de una saga y que, a la vez, se basan en libros. Es una solución rápida para revisar toda la información sobre estas sagas. Entendemos que la existencia de la discusión sobre qué es mejor si el libro o la película está lejos de terminar, por eso hemos unido la posibilidad de enlaces directos para comprar los libros en que se basan las películas. 
+Es una aplicación web (responsive) que permite a los usuarios encontrar información sobre películas que forman parte de una saga y que, a la vez, se basan en libros. Es, entonces, una solución rápida para revisar toda la información sobre estas sagas. Entendemos que la existencia de la discusión sobre qué es mejor si el libro o la película está lejos de terminar, por eso hemos unido la posibilidad de enlaces directos para comprar los libros en que se basan las películas. 
 El site se plantea simple y limpio, sin llegar a ser minimalista pero lejos del abuso visual. Nos hemos centrado en que sea una página apta para personas de todas las edades y con diversas habilidades en la navegación.  
 
 
@@ -40,8 +40,8 @@ Con esos elementos en mente se ha considerado que:
 
 
 #### Equipo:
-María Paz Thompson (Front-End Developer) - Camila Cornejos (Front-End Developer) - 
-Macarena Araos (UX Design) - Valentina Galleani (UX Design) - Ro Arriaza (UX Design)
+![Equipo](https://image.ibb.co/gRitZ6/team.png)
+
 
 El equipo en conjunto ha discutido largamente sobre el producto, valorando ideas y porqués basado en experiencias propias y de amigos, además de información de conocimiento público (internet). Una vez que decidimos la temática sobre la que trataría el site dimos paso a un design sprint (veloz), en que discutimos los elementos que eran necesarios que nuestra página tuviese para facilitar o mejorar la experiencia del user. Cada integrante genero un scketch de las distintas vistas, sobre las que votamos dividiendo el voto en "vista general" y en "elemento específico". Luego rehicimos el scketch seleccionando todos los detalles con mayor votación, lo que dio como resultado las siguientes imágenes:
 
