@@ -29,3 +29,13 @@
         $('.trigger-modal').modal();
 
     });*/
+
+    /* Categorías
+
+    var titleCategory= $('#categoria');
+
+    titleCategory.append(paste.Title);
+
+    var imgCategory= $('#movieImgs');
+    imgCategory.append('  <div class="images"> <img src="' + paste.Poster + '"> <h5>'+ paste.Title +'</h5> <p style="font-weight=bold">' + paste.Year + '</p> </div>')
+    */
