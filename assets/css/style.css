@@ -26,8 +26,12 @@
 	background-size: cover;
 }
 
-.images-mas-vistas{
-	width: 4em;
-	height: auto;
-	background-size: cover;
+.moreSeenSection{
+	background-color: #ececec;
+}
+
+.dottedline{
+	margin: 1em;
+	border: none;
+	border-bottom: 1px dotted #ceced0;
 }
