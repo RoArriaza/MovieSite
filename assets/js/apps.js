@@ -51,42 +51,135 @@ console.log(data);
 
 /*funciones para filtrar peliculas de la data segun categoria y mostrar en index.html
 *agregando contenido dinamico en categorías
+*
+* primera funcion categoria fantasia
 */
 function printFantasyMovies() {
   var imgCategory = $('#movieImgs1');
   for (var i = 0; i < data.length; i++) {
     if (data[i].genero === 'Fantasía, Familiar' || data[i].genero === 'Fantasía, Drama') {
+      var id = data[i].id;
       imgCategory.append('<div class="images col s3 m3 l3 xl3"> <img src="' + data[i].poster
                         + '" style="width:100%"> <h5 class="name">' + data[i].nombre +'</h5> <p style="font-weight:bold; font-size:1em;">'
                         + data[i].año + '</p> </div>');
     }
   }
   $('#categoria1').append('<h3>Fantasy</h3>');
+  // funcion para redireccionar a pagina con info detallada   
+  $('.images').click(function () {
+    window.location.href="inicial.html"
+    //url que cambiará según el elemento al que se le haga click
+    var newUrl = 'http://www.omdbapi.com/?i=' + id+ '&apikey=276881c0';
+
+    console.log(newUrl);
+
+    $.ajax({
+      type: 'GET',
+      url: newUrl,
+      success: movieInfo,
+      error: renderError
+    });
+  
+  //imprimiendo información de la api en pantalla (inicial.html)
+    function movieInfo(paste) {
+      var poster= $('#poster');
+      var datos= $('#datos');
+      poster.append('<img src="' + paste.Poster + '" alt="poster">');
+      datos.append('<h3>' + paste.Title + '</h3> <h4>Año:</h4><p>'
+                  + paste.Year + '</p><h4>Duración: </h4><p>' + paste.Runtime
+                  + '</p><h4>Director:</h4><p>' + paste.Director
+                  + '</p><h4>Escritor: </h4><p>' + paste.Writer
+                  + '</p><h4>Actores: </h4><p>' + paste.Actors
+                  + '</p><a href="' + paste.Website + '">Website Oficial</a>');
+    }
+  });
 }
 
+//funcion categoria accion
 function printActionMovies() {
   var imgCategory = $('#movieImgs2');
   for(var j = 0; j < data.length; j++) {
     if (data[j].genero === 'Fantasía, Acción') {
+      var id = data[j].id;
       imgCategory.append('<div class="images col s3 m3 l3 xl3"> <img src="' + data[j].poster
                         + '" style="width:100%"> <h5 class="name">' + data[j].nombre +'</h5> <p style="font-weight:bold; font-size:1em;">'
                         + data[j].año + '</p> </div>');
     }
   }
   $('#categoria2').append('<h3>Action</h3>');
+  // funcion para redireccionar a pagina con info detallada   
+  $('.images').click(function () {
+    window.location.href="inicial.html"
+    //url que cambiará según el elemento al que se le haga click
+    var newUrl = 'http://www.omdbapi.com/?i=' + id+ '&apikey=276881c0';
+
+    console.log(newUrl);
+
+    $.ajax({
+      type: 'GET',
+      url: newUrl,
+      success: movieInfo,
+      error: renderError
+    });
+  
+  //imprimiendo información de la api en pantalla (inicial.html)
+    function movieInfo(paste) {
+      var poster= $('#poster');
+      var datos= $('#datos');
+      poster.append('<img src="' + paste.Poster + '" alt="poster">');
+      datos.append('<h3>' + paste.Title + '</h3> <h4>Año:</h4><p>'
+                  + paste.Year + '</p><h4>Duración: </h4><p>' + paste.Runtime
+                  + '</p><h4>Director:</h4><p>' + paste.Director
+                  + '</p><h4>Escritor: </h4><p>' + paste.Writer
+                  + '</p><h4>Actores: </h4><p>' + paste.Actors
+                  + '</p><a href="' + paste.Website + '">Website Oficial</a>');
+    }
+  });
 }
 
+//funcion categoria ciencia ficcion
 function printSciFiMovies() {
   var imgCategory = $('#movieImgs3');
   for(var k = 0; k < data.length; k++) {
     if (data[k].genero === 'Sci-Fi') {
+      var id = data[k].id;
       imgCategory.append('<div class="images col s3 m3 l3 xl3"> <img src="' + data[k].poster
                         + '" style="width:100%"> <h5 class="name">' + data[k].nombre +'</h5> <p style="font-weight:bold; font-size:1em;">'
                         + data[k].año + '</p></div>');
     }
+    console.log(id);
   }
   $('#categoria3').append('<h3>Sci Fi</h3>');
+  // funcion para redireccionar a pagina con info detallada   
+  $('.images').click(function () {
+    window.location.href="inicial.html"
+    //url que cambiará según el elemento al que se le haga click
+    var newUrl = 'http://www.omdbapi.com/?i=' + id+ '&apikey=276881c0';
+
+    console.log(newUrl);
+
+    $.ajax({
+      type: 'GET',
+      url: newUrl,
+      success: movieInfo,
+      error: renderError
+    });
+  
+  //imprimiendo información de la api en pantalla (inicial.html)
+    function movieInfo(paste) {
+      var poster= $('#poster');
+      var datos= $('#datos');
+      poster.append('<img src="' + paste.Poster + '" alt="poster">');
+      datos.append('<h3>' + paste.Title + '</h3> <h4>Año:</h4><p>'
+                  + paste.Year + '</p><h4>Duración: </h4><p>' + paste.Runtime
+                  + '</p><h4>Director:</h4><p>' + paste.Director
+                  + '</p><h4>Escritor: </h4><p>' + paste.Writer
+                  + '</p><h4>Actores: </h4><p>' + paste.Actors
+                  + '</p><a href="' + paste.Website + '">Website Oficial</a>');
+    }
+  });
 }
+
 
 
 //obteniendo resultado de la busqueda imprimiendo en consola y pantalla (index.html)
@@ -125,40 +218,6 @@ function renderMovies (response) {
 
     //url que cambiará según el elemento al que se le haga click
     var newUrl = 'http://www.omdbapi.com/?t=' + replacedStr + '&apikey=276881c0';
-
-    console.log(newUrl);
-
-    $.ajax({
-      type: 'GET',
-      url: newUrl,
-      success: movieInfo,
-      error: renderError
-    });
-  
-  //imprimiendo información de la api en pantalla (inicial.html)
-    function movieInfo(paste) {
-      var poster= $('#poster');
-      var datos= $('#datos');
-      poster.append('<img src="' + paste.Poster + '" alt="poster">');
-      datos.append('<h3>' + paste.Title + '</h3> <h4>Año:</h4><p>'
-                  + paste.Year + '</p><h4>Duración: </h4><p>' + paste.Runtime
-                  + '</p><h4>Director:</h4><p>' + paste.Director
-                  + '</p><h4>Escritor: </h4><p>' + paste.Writer
-                  + '</p><h4>Actores: </h4><p>' + paste.Actors
-                  + '</p><a href="' + paste.Website + '">Website Oficial</a>');
-    }
-  });
-
-    //obteniendo información (titulo de cada pelicula) para mostrar en inicial.html
-  $('.images').click(function () {
-    window.location.href="inicial.html"
-    var strTitle = $(this).text();
-    var replaced = str.split(' ').join('+');
-
-    console.log(replaced);
-
-    //url que cambiará según el elemento al que se le haga click
-    var newUrl = 'http://www.omdbapi.com/?t=' + replaced + '&apikey=276881c0';
 
     console.log(newUrl);
 
