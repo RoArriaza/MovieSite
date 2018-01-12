@@ -15,7 +15,6 @@
 }
 
 .one{
-  background-color: #;
   height: 25em;
   /*outline: 1px solid red; */
 }
@@ -33,13 +32,7 @@ img.teamPic{
 .description p{
   font-size: 1.247em;
 }
-.two{
-  background-color: #;
-  /*outline: 1px green; */
-}
-.three{
 
-}
 img.valeUx, img.roUx, img.macaUx, img.camiFront, img.maripiFront{
   height: 15em;
   width: 15em;
@@ -59,6 +52,7 @@ img.valeUx:hover, img.roUx:hover, img.macaUx:hover, img.camiFront:hover, img.mar
   font-weight: bolder;
   font-size: 1.2em;
 }
+
 .page-footer{
   margin-top: 5em;
   height: 10em;
@@ -70,16 +64,10 @@ img.valeUx:hover, img.roUx:hover, img.macaUx:hover, img.camiFront:hover, img.mar
 p.copyright{
   font-size: 1.25em;
 }
-span.footer-name{
-  font-size: 1.25em;
-  font-weight: ;
-}
-
-
 
 .logo-footer{
-  height: 4em;
-  margin-top: -0.8em;
+  width: 14em;
+  height: 100%;
 }
 .social-icons{
   font-size: 1.5em;
