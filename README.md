@@ -7,7 +7,7 @@ Es una aplicación web (responsive) que permite a los usuarios encontrar informa
 El site se plantea simple y limpio, sin llegar a ser minimalista pero lejos del abuso visual. Nos hemos centrado, sobre todo, en que sea una página apta para personas de todas las edades y con diversas habilidades en la navegación.  
 
 
-#### ¿Por qué películas que son saga y que se basan en libros? (Problema) 
+#### ¿Por qué películas que son saga y que se basan en libros?
 
 Partamos por el inicio y veamos unas cifras simples pero esclarecedoras: en el año 2017 fueron **estrenadas 412 películas**, en el mundo occidental, según el *"Instituto de la cinematografía y de las artes escénicas de España"*, las que tomarían cerca de 139 horas cronológicas a quien quisiera verlas todas, un 38% de su tiempo anual. Ello sin importar su género, idioma o país de procedencia, mucho menos la temática o trama de la historia en cuestión.    
   
