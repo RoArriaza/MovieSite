@@ -12,6 +12,13 @@
 	width: 40%;
 }
 
+.warning{
+	border: 1px solid red;
+	background-color: #fcbfb6;
+	padding-bottom: 1em;
+}
+/*fin modal*/
+
 .input-field input[type=search]{
 	padding-left: 3em;
 }

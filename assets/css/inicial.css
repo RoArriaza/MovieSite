@@ -7,7 +7,6 @@
 nav .nav-wrapper {
 	position: relative;
 	height: 100%;
-	background-color: ;
 }
 
 .logo{
@@ -25,12 +24,10 @@ nav .nav-wrapper {
 	width: 40%;
 }
 
-.modal div:last-child{
-	text-align: center;
-}
-
-.btn{
-	padding: 0 0.8em;
+.warning{
+	border: 1px solid red;
+	background-color: #fcbfb6;
+	padding-bottom: 1em;
 }
 /*fin modal*/
 

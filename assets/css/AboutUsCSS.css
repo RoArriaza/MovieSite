@@ -19,10 +19,12 @@
 	width: 40%;
 }
 
-.modal div:last-child{
-	text-align: center;
+.warning{
+	border: 1px solid red;
+	background-color: #fcbfb6;
+	padding-bottom: 1em;
 }
-
+/*fin modal*/
 
 .one{
   height: 25em;
