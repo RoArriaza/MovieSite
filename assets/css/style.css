@@ -40,10 +40,15 @@
 	width: 10em;
 	height: auto;
 	background-size: cover;
+	-webkit-filter: grayscale(0%);
+	margin-bottom: 1em;
+	
 }
 
 .images:hover{
   cursor: pointer;
+	-webkit-filter: grayscale(70%);
+	background-color: #e8e8e8
 }
 
 .moreSeenSection{
@@ -84,5 +89,3 @@ p.copyright{
   color: #FFFFFF;
   margin-right: 1em;
 }
-
-

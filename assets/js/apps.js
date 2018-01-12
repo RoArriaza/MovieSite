@@ -60,13 +60,13 @@ function printFantasyMovies() {
   for (var i = 0; i < data.length; i++) {
     if (data[i].genero === 'Fantasía, Familiar' || data[i].genero === 'Fantasía, Drama') {
       var id = data[i].id;
-      imgCategory.append('<div class="images col s3 m3 l3 xl3" style="height:20em"> <img src="' + data[i].poster
-                        + '" style="width:100%"> <h6 class="name" style="font-weight:bold; font-size:1em;">' + data[i].nombre +'</h6> <p style="font-size:1em;">'
-                        + data[i].año + '</p> </div>');
+      imgCategory.append('<div class="center images col s3 m3 l3 xl3" style="height:20em; padding-top:1em;"> <img src="' + data[i].poster
+                        + '" style="width:100%"> <h6 class="name" style="font-weight:bold; font-size:1em;">' + data[i].nombre +'</h6> <span style="font-size:1em;">'
+                        + data[i].año + '</span> </div>');
     }
   }
   $('#categoria1').append('<h3>Fantasy</h3>');
-  // funcion para redireccionar a pagina con info detallada   
+  // funcion para redireccionar a pagina con info detallada
   $('.images').click(function () {
     window.location.href="inicial.html"
     //url que cambiará según el elemento al que se le haga click
@@ -80,7 +80,7 @@ function printFantasyMovies() {
       success: movieInfo,
       error: renderError
     });
-  
+
   //imprimiendo información de la api en pantalla (inicial.html)
     function movieInfo(paste) {
       var poster= $('#poster');
@@ -102,13 +102,13 @@ function printActionMovies() {
   for(var j = 0; j < data.length; j++) {
     if (data[j].genero === 'Fantasía, Acción') {
       var id = data[j].id;
-      imgCategory.append('<div class="images col s3 m3 l3 xl3" style="height:20em"> <img src="' + data[j].poster
+      imgCategory.append('<div class="images col s3 m3 l3 xl3" style="height:20em; padding-top:1em;"> <img src="' + data[j].poster
                         + '" style="width:100%"> <h6 class="name" style="font-weight:bold; font-size:1em;">' + data[j].nombre +'</h6> <p style="font-size:1em;">'
                         + data[j].año + '</p> </div>');
     }
   }
   $('#categoria2').append('<h3>Action</h3>');
-  // funcion para redireccionar a pagina con info detallada   
+  // funcion para redireccionar a pagina con info detallada
   $('.images').click(function () {
     window.location.href="inicial.html"
     //url que cambiará según el elemento al que se le haga click
@@ -122,7 +122,7 @@ function printActionMovies() {
       success: movieInfo,
       error: renderError
     });
-  
+
   //imprimiendo información de la api en pantalla (inicial.html)
     function movieInfo(paste) {
       var poster= $('#poster');
@@ -144,30 +144,30 @@ function printSciFiMovies() {
   for(var k = 0; k < data.length; k++) {
     if (data[k].genero === 'Sci-Fi') {
       var id = data[k].id;
-      imgCategory.append('<div class="images col s3 m3 l3 xl3" style="height:20em"> <img src="' + data[k].poster
+      imgCategory.append('<div class="images col s3 m3 l3 xl3" style="height:20em; padding-top:1em;"> <img src="' + data[k].poster
                         + '" style="width:100%"> <h6 class="name" style="font-weight:bold; font-size:1em;">' + data[k].nombre +'</h6> <p style="font-size:1em;">'
                         + data[k].año + '</p></div>');
     }
     console.log(id);
   }
   $('#categoria3').append('<h3>Sci Fi</h3>');
-  // funcion para redireccionar a pagina con info detallada   
+  // funcion para redireccionar a pagina con info detallada
   $('.images').click(function () {
     window.location.href="inicial.html"
     //url que cambiará según el elemento al que se le haga click
-    var idUrl = 'http://www.omdbapi.com/?i=' + id + '&apikey=276881c0';
+    var newUrl = 'http://www.omdbapi.com/?i=' + id+ '&apikey=276881c0';
 
     console.log(newUrl);
 
     $.ajax({
       type: 'GET',
-      url: idUrl,
-      success: movieInfoData,
+      url: newUrl,
+      success: movieInfo,
       error: renderError
     });
-  
+
   //imprimiendo información de la api en pantalla (inicial.html)
-    function movieInfoData(paste) {
+    function movieInfo(paste) {
       var poster= $('#poster');
       var datos= $('#datos');
       poster.append('<img src="' + paste.Poster + '" alt="poster">');
@@ -207,11 +207,12 @@ function renderMovies (response) {
     resultsUl.append(moviesList);
     titleFld.val('');
   }
+}
 
-    //obteniendo información (titulo de cada pelicula) para mostrar en inicial.html
+  //obteniendo información (titulo de cada pelicula) para mostrar en inicial.html
   $('.resultList').click(function () {
     window.location.href="inicial.html"
-    var str = $(this).text();
+    var str = $('.name').text();
     var replacedStr = str.split(' ').join('+');
 
     console.log(replacedStr);
@@ -227,7 +228,7 @@ function renderMovies (response) {
       success: movieInfo,
       error: renderError
     });
-  
+
   //imprimiendo información de la api en pantalla (inicial.html)
     function movieInfo(paste) {
       var poster= $('#poster');
@@ -241,9 +242,6 @@ function renderMovies (response) {
                   + '</p><a href="' + paste.Website + '">Website Oficial</a>');
     }
   });
-}
-
-
 
 //imprimir error en la consola
 function renderError (error) {
