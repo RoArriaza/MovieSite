@@ -51,16 +51,28 @@
 			<!-- Div para imagen de portada -->
 			<div class="col s12 m12 l5 xl5">
 				<div class="center">
-					<div id="poster" class='poster'></div>
-					<div id="rating"></div>
+					<div id="poster" class='poster'>
+						<img src="assets/img/camara_secreta.jpg" alt="harry_potter">
+					</div>
+					<div class="col offset-l" id="rating"></div>
 				</div>
 			</div>
 			<!-- Datos extraidos de API -->
 			<div class="col s12 m12 l7 xl7">
 				<!-- título de película -->
-				<div class="center title" id="titulo"></div>
+				<div class="center title" id="titulo">
+					<h4>Harry Potter and the Chamber of Secrets</h4>
+					<hr>
+				</div>
 				<!-- datos de película -->
-				<div class="datos" id="datos"></div>
+				<div class="datos" id="datos">
+					<p><h5>Year:</h5>2002</p>
+					<p><h5>Runtime:</h5>161</p>
+					<p><h5>Director:</h5>Chris Columbus</p>
+					<p><h5>Writter:</h5>J.K.Rowling(novel), Steve Kloves(screenplay)</p>
+					<p><h5>Actors:</h5>Daniel Radcliffe, Ruper Grint, Emma Watson, Richard Griffiths</p>
+					<p><a href="#">Website Oficial</a></p>
+				</div>
 				<!-- botones de compras en línea -->
 				<div class="row">
 					<div class="starsValue">
@@ -74,8 +86,8 @@
 						</select>
 					</div>
 				</div>
-				<button id="btnEbook" class=" center canvas btn" href="https://www.amazon.com/Los-hombres-que-amaban-mujeres/dp/8423342727/ref=sr_1_2?s=books&ie=UTF8&qid=1515556479&sr=1-2&keywords=Los+hombres+que+no+amaban+a+las+mujeres" target="_blank">Amazon ebook</button>
-				<button id="btnBook" class="center canvas btn" href="https://www.antartica.cl/antartica/servlet/LibroServlet?action=fichaLibro&id_libro=180189" target="_blank">Buy the Book</button>
+				<button id="btnEbook" class=" center canvas btn" href="https://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=harry+potter+ebook" target="_blank">Amazon ebook</button>
+				<button id="btnBook" class="center canvas btn" href="https://www.bookdepository.com/Harry-Potter-and-the-Chamber-of-Secrets-J-K-Rowling/9781408855669?ref=grid-view&qid=1515606507224&sr=1-2" target="_blank">Buy the Book</button>
 			</div>
 		</div>
 		<div class="row">
@@ -88,9 +100,9 @@
 				<div class="carruselSagas">
 					<div class="carousel">
 						<!-- Imágenes que van al carrusel. -->
-						<a class="carousel-item" href="#one!"><img src="assets/img/millennium1.jpg"></a>
-						<a class="carousel-item" href="#two!"><img src="assets/img/millennium2.jpg"></a>
-						<a class="carousel-item" href="#three!"><img src="assets/img/millennium3.jpg"></a>
+						<a class="carousel-item" href="#one!"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BNjQ3NWNlNmQtMTE5ZS00MDdmLTlkZjUtZTBlM2UxMGFiMTU3XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg"></a>
+						<a class="carousel-item" href="#two!"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg"></a>
+						<a class="carousel-item" href="#three!"><img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_SX300.jpg"></a>
 					</div>
 				</div>
 			</div>
@@ -99,7 +111,7 @@
 			<div class="col s12 m12 l12 xl12">
 				<h4 class="post"><strong>Comments</strong></h4>
 				<div class="inputComment">
-					<form class="col s12">
+					<form class="col s12" action="javascript:void(0)">
 						<div class="row">
 							<div class="input-field col s12">
 								<textarea id="saveComment" class="materialize-textarea" placeholder="Just tipe your comment."></textarea>

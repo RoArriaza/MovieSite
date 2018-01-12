@@ -94,6 +94,10 @@ nav .nav-wrapper {
 	margin-bottom: 1em;
 }
 
+.poster img{
+	width: 100%;
+}
+
 .h6bigger{
 	font-size: 1.5em;
 	font-weight: bold;
@@ -125,3 +129,38 @@ p.copyright{
   color: #FFF;
   margin-right: 1em;
 }
+
+.buttons{
+    height: 3em;
+ width: 9em;
+}
+
+#btnBook{
+    margin-left: 2em;
+    
+}
+
+.btn{
+    padding: 0.4em;
+    background-color: #212121;
+    margin-top: 1em;
+}
+
+.comments{
+    margin-top: 4em;
+    font-family: 'Glegoo', serif;
+}
+
+.btn-submit{
+    margin-bottom: 0.2em;
+    background-color: #212121;
+}
+/*
+#rating{
+	background-color: #ffbf00;
+	border-radius: 0.8em;
+	width: 7em;
+	height: 5em;
+	margin-top: 3em;
+}
+*/

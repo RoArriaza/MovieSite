@@ -181,8 +181,6 @@ function printSciFiMovies() {
   });
 }
 
-
-
 //obteniendo resultado de la busqueda imprimiendo en consola y pantalla (index.html)
 function renderMovies (response) {
   console.log(response);
