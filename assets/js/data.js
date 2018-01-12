@@ -10,7 +10,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0241527",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjQ3NWNlNmQtMTE5ZS00MDdmLTlkZjUtZTBlM2UxMGFiMTU3XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
-  "año":"2001"
+  "año":"2001",
   },
   {
   "nombre": "Harry Potter and the Chamber of Secrets",
@@ -22,7 +22,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0295297",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcxODgwMDkxNV5BMl5BanBnXkFtZTYwMDk2MDg3._V1_SX300.jpg",
-  "año":"2002"
+  "año":"2002",
   },
   {
   "nombre": "Harry Potter and the Prisoner of Azkaban",
@@ -34,7 +34,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0304141",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY4NTIwODg0N15BMl5BanBnXkFtZTcwOTc0MjEzMw@@._V1_SX300.jpg",
-  "año":"2004"
+  "año":"2004",
   },
   {
   "nombre": "Harry Potter and the Goblet of Fire",
@@ -46,19 +46,19 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0330373",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_SX300.jpg",
-  "año":"2005"
+  "año":"2005",
   },
   {
   "nombre": "Harry Potter and the Order of the Phoenix",
   "ebook": "https://www.amazon.com/s/ref=nb_sb_noss_1?url=search-alias%3Daps&field-keywords=harry+potter+ebook",
   "libro": "https://www.bookdepository.com/Harry-Potter-and-the-Order-of-the-Phoenix-J-K-Rowling-Mary-Grandpre/9780439358071?ref=grid-view&qid=1515607862214&sr=1-5",
-  // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.
+
   "genero": "Fantasía, Familiar",
   "trailer": "https://www.youtube.com/embed/vDuXlALoCNM?rel=0&amp;controls=0&amp;showinfo=0",
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0373889",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTM0NTczMTUzOV5BMl5BanBnXkFtZTYwMzIxNTg3._V1_SX300.jpg",
-  "año":"2007"
+  "año":"2007",
   },
   {
   "nombre": "Harry Potter and the Half-Blood Prince",
@@ -70,7 +70,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0417741",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzU3NDg4NTAyNV5BMl5BanBnXkFtZTcwOTg2ODg1Mg@@._V1_SX300.jpg",
-  "año":"2009"
+  "año":"2009",
   },
   {
   "nombre": "Harry Potter and the Deathly Hallows part 1",
@@ -82,7 +82,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0926084",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg",
-  "año":"2010"
+  "año":"2010",
   },
   {
   "nombre": "Harry Potter and the Deathly Hallows part 2",
@@ -94,7 +94,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt1201607",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyZGU4YzUtNDkzYi00ZDRhLTljYzctYTMxMDQ4M2E0Y2YxXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg",
-  "año":"2011"
+  "año":"2011",
   },
 //Crepusculo
   {
@@ -107,7 +107,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt1099212",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2NzUxMTAxN15BMl5BanBnXkFtZTcwMzEyMTIwMg@@._V1_SX300.jpg",
-  "año":"2008"
+  "año":"2008",
   },
   {
   "nombre": "The Twilight Saga: New Moon",
@@ -117,9 +117,9 @@ var data = [
   "genero": "Fantasía, Drama",
   "trailer": "https://www.youtube.com/embed/QDnBG0sSuok?rel=0&amp;controls=0&amp;showinfo=0",
   // Buscar trailer de película con subtítulos si es en inglés.
-  "id": "tt1259571"
+  "id": "tt1259571",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTI3MjE3NDIxNF5BMl5BanBnXkFtZTcwODM3NTY5Mg@@._V1_SX300.jpg",
-  "año":"2009"
+  "año":"2009",
   },
   {
   "nombre": "The Twilight Saga: Eclipse",
@@ -131,7 +131,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt1325004",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNDMwNjAzNzYwOF5BMl5BanBnXkFtZTcwMDY5NzcyMw@@._V1_SX300.jpg",
-  "año":"2010"
+  "año":"2010",
   },
   {
   "nombre": "The Twilight Saga: Breaking Dawn Part 1",
@@ -143,7 +143,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0295297",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODgxNDE0OTAzOF5BMl5BanBnXkFtZTcwNzcwODE2Ng@@._V1_SX300.jpg",
-  "año":"2011"
+  "año":"2011",
   },
   {
   "nombre": "The Twilight Saga: Breaking Dawn Part 2",
@@ -155,7 +155,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt1673434",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyMzUyMzY1OF5BMl5BanBnXkFtZTcwNDQ4ODk1OA@@._V1_SX300.jpg",
-  "año":"2012"
+  "año":"2012",
   },
 //El Hobbit y El señor de los anillos
   {
@@ -180,7 +180,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt1170358",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_SX300.jpg",
-  "año":"2013"
+  "año":"2013",
   },
   {
   "nombre": "The Hobbit: The Battle of the Five Armies",
@@ -192,7 +192,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt2310332",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BODAzMDgxMDc1MF5BMl5BanBnXkFtZTgwMTI0OTAzMjE@._V1_SX300.jpg",
-  "año":"2014"
+  "año":"2014",
   },
   {
   "nombre": "The Lord of the rings: The Fellowship of the Ring",
@@ -204,7 +204,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0120737",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
-  "año":"2001"
+  "año":"2001",
   },
   {
   "nombre": "The Lord of the rings: The Two Towers",
@@ -216,7 +216,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0167261",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMDY0NmI4ZjctN2VhZS00YzExLTkyZGItMTJhOTU5NTg4MDU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
-  "año":"2002"
+  "año":"2002",
   },
   {
   "nombre": "The Lord of the rings: The Return of the King",
@@ -228,7 +228,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0167260",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYWY1ZWQ5YjMtMDE0MS00NWIzLWE1M2YtODYzYTk2OTNlYWZmXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg",
-  "año":"2003"
+  "año": "2003",
   },
 //Las crónicas de Narnia
   {
@@ -241,7 +241,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0363771",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0NTUwMTU5OV5BMl5BanBnXkFtZTcwNjAwNzQzMw@@._V1_SX300.jpg",
-  "año":"2005"
+  "año": "2005",
   },
   {
   "nombre": "The Chronicles of Narnia: Prince Caspian",
@@ -253,7 +253,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0499448",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTIwOTA4NTE4Ml5BMl5BanBnXkFtZTcwOTI2NTg1MQ@@._V1_SX300.jpg",
-  "año":"2008"
+  "año": "2008",
   },
   {
   "nombre": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
@@ -265,7 +265,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0980970",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNjQ2MDQzMzExNl5BMl5BanBnXkFtZTcwMTYzOTc5Mw@@._V1_SX300.jpg",
-  "año":"2010"
+  "año": "2010",
   },
 //Divergente
   {

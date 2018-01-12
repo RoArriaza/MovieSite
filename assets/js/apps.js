@@ -19,10 +19,10 @@ $(document).ready(function () {
   // Estrellas de valoración
   $('#star-rating').starrating();
   $( '#star-rating' ).starrating({
-  clearable : true,
-  initialText: "Click to Rate",
-  onClick : null,
-  showText : true,
+    clearable : true,
+    initialText: "Click to Rate",
+    onClick : null,
+    showText : true,
   });
 });
 
@@ -54,9 +54,9 @@ function printFantasyMovies() {
   var imgCategory = $('#movieImgs1');
   for (var i = 0; i < data.length; i++) {
     if (data[i].genero === 'Fantasía, Familiar' || data[i].genero === 'Fantasía, Drama') {
-      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster'
+      imgCategory.append('<div class="images"> <img src="' + data[i].poster
                         + '"> <h5>' + data[i].nombre +'</h5> <p style="font-weight=bold">'
-                        + 'paste.Year' + '</p> </div>');
+                        + data[i].año + '</p> </div>');
     }
   }
   $('#categoria1').append('<h3>Fantasy</h3>');
@@ -66,9 +66,9 @@ function printActionMovies() {
   var imgCategory = $('#movieImgs2');
   for(var j = 0; j < data.length; j++) {
     if (data[j].genero === 'Fantasía, Acción') {
-      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster'
+      imgCategory.append('<div class="images"> <img src="' + data[j].poster
                         + '"> <h5>' + data[j].nombre +'</h5> <p style="font-weight=bold">'
-                        + 'paste.Year' + '</p> </div>');
+                        + data[j].año + '</p> </div>');
     }
   }
   $('#categoria2').append('<h3>Action</h3>');
@@ -78,9 +78,9 @@ function printSciFiMovies() {
   var imgCategory = $('#movieImgs3');
   for(var k = 0; k < data.length; k++) {
     if (data[k].genero === 'Sci-Fi') {
-      imgCategory.append('<div class="images"> <img src="' + 'paste.Poster'
+      imgCategory.append('<div class="images"> <img src="' + data[k].poster
                         + '"> <h5>' + data[k].nombre +'</h5> <p style="font-weight=bold">'
-                        + 'paste.Year' + '</p> </div>');
+                        + data[k].año + '</p> </div>');
     }
   }
   $('#categoria3').append('<h3>Sci Fi</h3>');
@@ -111,6 +111,7 @@ function renderMovies (response) {
     resultsUl.append(moviesList);
     titleFld.val('');
   }
+}
 
   //agregando contenido dinamico en categorías
 
@@ -133,7 +134,7 @@ function renderMovies (response) {
       success: movieInfo,
       error: renderError
     });
-
+  
   //imprimiendo información de la api en pantalla (inicial.html)
     function movieInfo(paste) {
       var poster= $('#poster');
@@ -147,7 +148,7 @@ function renderMovies (response) {
                   + '</p><a href="' + paste.Website + '">Website Oficial</a>');
     }
   });
-}
+
 
 //imprimir error en la consola
 function renderError (error) {
@@ -179,7 +180,7 @@ $('#saveComment').keyup(function addCommentKey(e) {
 
 // Agregar sección lo más visto.
 
-function pasteMoreSeen(){
-  var cont= $('#moreSeen');
+function pasteMoreSeen() {
+  var cont = $('#moreSeen');
   cont.append('<img width="50%" src="https://goo.gl/FUkwk2"><h5>X-Men: Days of Future Past</h5><p>Director: Bryan Singer</p><p>2014</p><p>Rating: 8.0</p> <hr class="dottedline"><img width="50%" src="https://goo.gl/VkumSP"><h5>The Hunger Games</h5><p>Director: Gary Ross</p><p>2012</p><p>Rating: 7.2</p> <hr class="dottedline"><img width="50%" src="https://goo.gl/RwNNXK"><h5>The Lord of the Rings: The Two Towers</h5><p>Director: Peter Jackson</p><p>2002</p><p>Rating: 8.7</p>');
 }
