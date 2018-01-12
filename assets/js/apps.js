@@ -54,8 +54,8 @@ function printFantasyMovies() {
   var imgCategory = $('#movieImgs1');
   for (var i = 0; i < data.length; i++) {
     if (data[i].genero === 'Fantasía, Familiar' || data[i].genero === 'Fantasía, Drama') {
-      imgCategory.append('<div class="images"> <img src="' + data[i].poster
-                        + '"> <h5>' + data[i].nombre +'</h5> <p style="font-weight=bold">'
+      imgCategory.append('<div class="images col s3 m3 l3 xl3"> <img src="' + data[i].poster
+                        + '" style="width:100%"> <h5>' + data[i].nombre +'</h5> <p style="font-weight:bold; font-size:1em;">'
                         + data[i].año + '</p> </div>');
     }
   }
@@ -66,8 +66,8 @@ function printActionMovies() {
   var imgCategory = $('#movieImgs2');
   for(var j = 0; j < data.length; j++) {
     if (data[j].genero === 'Fantasía, Acción') {
-      imgCategory.append('<div class="images"> <img src="' + data[j].poster
-                        + '"> <h5>' + data[j].nombre +'</h5> <p style="font-weight=bold">'
+      imgCategory.append('<div class="images col s3 m3 l3 xl3"> <img src="' + data[j].poster
+                        + '" style="width:100%"> <h5>' + data[j].nombre +'</h5> <p style="font-weight:bold; font-size:1em;">'
                         + data[j].año + '</p> </div>');
     }
   }
@@ -78,9 +78,9 @@ function printSciFiMovies() {
   var imgCategory = $('#movieImgs3');
   for(var k = 0; k < data.length; k++) {
     if (data[k].genero === 'Sci-Fi') {
-      imgCategory.append('<div class="images"> <img src="' + data[k].poster
-                        + '"> <h5>' + data[k].nombre +'</h5> <p style="font-weight=bold">'
-                        + data[k].año + '</p> </div>');
+      imgCategory.append('<div class="images col s3 m3 l3 xl3"> <img src="' + data[k].poster
+                        + '" style="width:100%"> <h5>' + data[k].nombre +'</h5> <p style="font-weight:bold; font-size:1em;">'
+                        + data[k].año + '</p></div>');
     }
   }
   $('#categoria3').append('<h3>Sci Fi</h3>');
