@@ -597,7 +597,7 @@ var data = [
   "poster": "",
   "año":""
   },
- 
+
  //Guardians of the Galaxy fantasía - familia
  {
   "nombre": "Guardians of the Galaxy",
@@ -674,7 +674,7 @@ var data = [
   "año":""
   },
 
-  //Fantastic Beats "Fantasía, Familia"  
+  //Fantastic Beats "Fantasía, Familia"
   {
   "nombre": "Fantastic Beasts and Where to Find Them",
   "ebook": "https://www.amazon.com/s/ref=nb_sb_noss_2?__mk_es_US=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=Fantastic+Beasts+and+Where+to+Find+Them+ebook&rh=i%3Aaps%2Ck%3AFantastic+Beasts+and+Where+to+Find+Them+ebook",
@@ -711,7 +711,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0081573",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMGQ2MjNiNDAtMTYwMy00MDk0LTkxZmYtNzBmNDQyMGYyN2I2XkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg",
-  "año":"1980" 
+  "año":"1980"
   },
  {
   "nombre": "Superman III",
@@ -747,7 +747,7 @@ var data = [
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0348150",
   "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU3NzA5MjI0Nl5BMl5BanBnXkFtZTcwMTEwNzMzMQ@@._V1_SX300.jpg",
-  "año":"2006" 
+  "año":"2006"
   },
   {
   "nombre": "Superman / Batman: Public Enemies",
@@ -778,7 +778,7 @@ var data = [
   "ebook": "https://www.amazon.com/s/ref=nb_sb_noss_2?__mk_es_US=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=SUPERMAN+ebooks&rh=i%3Aaps%2Ck%3ASUPERMAN+ebooks",
   "libro": "https://www.bookdepository.com/search?searchTerm=superman&search=Find+book",
   // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.
-  "genero": "Sci-Fi",
+  "genero": "Fantasía, Acción",
   "trailer": "https://www.youtube.com/embed/T6DJcgm3wNY?rel=0&amp;controls=0&amp;showinfo=0",
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0770828",

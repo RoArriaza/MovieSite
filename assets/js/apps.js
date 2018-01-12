@@ -275,5 +275,5 @@ $('#saveComment').keyup(function addCommentKey(e) {
 
 function pasteMoreSeen() {
   var cont = $('#moreSeen');
-  cont.append('<img width="50%" src="https://goo.gl/FUkwk2"><h5>X-Men: Days of Future Past</h5><p>Director: Bryan Singer</p><p>2014</p><p>Rating: 8.0</p> <hr class="dottedline"><img width="50%" src="https://goo.gl/VkumSP"><h5>The Hunger Games</h5><p>Director: Gary Ross</p><p>2012</p><p>Rating: 7.2</p> <hr class="dottedline"><img width="50%" src="https://goo.gl/RwNNXK"><h5>The Lord of the Rings: The Two Towers</h5><p>Director: Peter Jackson</p><p>2002</p><p>Rating: 8.7</p>');
+  cont.append('<img width="50%" src="https://goo.gl/FUkwk2"><h6 style="font-weight:bold;">X-Men: Days of Future Past</h6><p>Director: Bryan Singer</p><p>2014</p><p>Rating: 8.0</p> <hr class="dottedline"><img width="50%" src="https://goo.gl/VkumSP"><h5>The Hunger Games</h5><p>Director: Gary Ross</p><p>2012</p><p>Rating: 7.2</p> <hr class="dottedline"><img width="50%" src="https://goo.gl/RwNNXK"><h5>The Lord of the Rings: The Two Towers</h5><p>Director: Peter Jackson</p><p>2002</p><p>Rating: 8.7</p>');
 }
