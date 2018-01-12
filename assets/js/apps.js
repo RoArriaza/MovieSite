@@ -56,11 +56,12 @@ console.log(data);
 */
 function printFantasyMovies() {
   var imgCategory = $('#movieImgs1');
+  var movies = [];
   for (var i = 0; i < data.length; i++) {
     if (data[i].genero === 'Fantasía, Familiar' || data[i].genero === 'Fantasía, Drama') {
       var id = data[i].id;
-      imgCategory.append('<div class="images col s3 m3 l3 xl3"> <img src="' + data[i].poster
-                        + '" style="width:100%"> <h5 class="name">' + data[i].nombre +'</h5> <p style="font-weight:bold; font-size:1em;">'
+      imgCategory.append('<div class="images col s3 m3 l3 xl3" style="height:20em"> <img src="' + data[i].poster
+                        + '" style="width:100%"> <h6 class="name" style="font-weight:bold; font-size:1em;">' + data[i].nombre +'</h6> <p style="font-size:1em;">'
                         + data[i].año + '</p> </div>');
     }
   }
@@ -101,8 +102,8 @@ function printActionMovies() {
   for(var j = 0; j < data.length; j++) {
     if (data[j].genero === 'Fantasía, Acción') {
       var id = data[j].id;
-      imgCategory.append('<div class="images col s3 m3 l3 xl3"> <img src="' + data[j].poster
-                        + '" style="width:100%"> <h5 class="name">' + data[j].nombre +'</h5> <p style="font-weight:bold; font-size:1em;">'
+      imgCategory.append('<div class="images col s3 m3 l3 xl3" style="height:20em"> <img src="' + data[j].poster
+                        + '" style="width:100%"> <h6 class="name" style="font-weight:bold; font-size:1em;">' + data[j].nombre +'</h6> <p style="font-size:1em;">'
                         + data[j].año + '</p> </div>');
     }
   }
@@ -143,8 +144,8 @@ function printSciFiMovies() {
   for(var k = 0; k < data.length; k++) {
     if (data[k].genero === 'Sci-Fi') {
       var id = data[k].id;
-      imgCategory.append('<div class="images col s3 m3 l3 xl3"> <img src="' + data[k].poster
-                        + '" style="width:100%"> <h5 class="name">' + data[k].nombre +'</h5> <p style="font-weight:bold; font-size:1em;">'
+      imgCategory.append('<div class="images col s3 m3 l3 xl3" style="height:20em"> <img src="' + data[k].poster
+                        + '" style="width:100%"> <h6 class="name" style="font-weight:bold; font-size:1em;">' + data[k].nombre +'</h6> <p style="font-size:1em;">'
                         + data[k].año + '</p></div>');
     }
     console.log(id);

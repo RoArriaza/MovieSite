@@ -38,8 +38,16 @@
 	background-size: cover;
 }
 
+.images:hover{
+  cursor: pointer;
+}
+
 .moreSeenSection{
 	background-color: #ececec;
+}
+
+#moreSeen:hover{
+  cursor: pointer;
 }
 
 .dottedline{
@@ -72,3 +80,5 @@ p.copyright{
   color: #FFFFFF;
   margin-right: 1em;
 }
+
+

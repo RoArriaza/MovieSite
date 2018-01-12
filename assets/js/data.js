@@ -748,7 +748,7 @@ var data = [
   "año":"2006" 
   },
   {
-  "nombre": "Superman/Batman: Public Enemies",
+  "nombre": "Superman / Batman: Public Enemies",
   "ebook": "https://www.amazon.com/s/ref=nb_sb_noss_2?__mk_es_US=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=SUPERMAN+ebooks&rh=i%3Aaps%2Ck%3ASUPERMAN+ebooks",
   "libro": "https://www.bookdepository.com/search?searchTerm=superman&search=Find+book",
   // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.
@@ -760,7 +760,7 @@ var data = [
   "año":"2009"
   },
  {
-  "nombre": "Superman/Batman: Apocalypse",
+  "nombre": "Superman / Batman: Apocalypse",
   "ebook": "https://www.amazon.com/s/ref=nb_sb_noss_2?__mk_es_US=ÅMÅŽÕÑ&url=search-alias%3Daps&field-keywords=SUPERMAN+ebooks&rh=i%3Aaps%2Ck%3ASUPERMAN+ebooks",
   "libro": "https://www.bookdepository.com/search?searchTerm=superman&search=Find+book",
   // Poner el resultado de búsqueda de la librería para que el usuario tenga opción de elegir cuál edición desea comprar.
