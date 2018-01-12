@@ -2,10 +2,6 @@
 ### Un sitio dedicado a las sagas de películas basadas en libros de ayer y hoy
 
 
- ![LogoSaga](https://image.ibb.co/j8KLE6/sagamovieblack.png)
-
-
-
 #### ¿Qué es "SagaMovie"?
 Es una aplicación web (responsive) que permite a los usuarios encontrar información sobre películas que forman parte de una saga y que, a la vez, se basan en libros. Es, entonces, una solución rápida para revisar toda la información sobre este tipo de sagas. Entendemos que la existencia de la discusión sobre qué es mejor si el libro o la película está lejos de terminar, por eso hemos unido la posibilidad de enlaces directos para comprar los libros en que se basan las películas. 
 El site se plantea simple y limpio, sin llegar a ser minimalista pero lejos del abuso visual. Nos hemos centrado, sobre todo, en que sea una página apta para personas de todas las edades y con diversas habilidades en la navegación.  
@@ -38,6 +34,9 @@ Con esos elementos en mente se ha considerado que:
 * Entender que las personas quieren saber sobre aquello que les atrae, nos permite imaginar que también quieren compartir lo que ya conocen a otras personas, por eso hemos establecido la opción de "comentarios" en cada resultado de película. 
  
 
+___
+
+
 #### Equipo:
 ![Equipo](https://image.ibb.co/gRitZ6/team.png)
 
@@ -58,14 +57,19 @@ El equipo en conjunto ha discutido largamente sobre el producto, valorando ideas
 ![Pantalla Secundaria](https://image.ibb.co/kPRYZ6/IMG_20180111_080457.jpg)
 
 El equipo de Front-End Developer ha estado a cargo de investigar, aprender y poner en uso la Api de OMDB para implementarla en la página, una página responsive, que ha sido diseña y maqueteada en conjunto por el equipo de UX Design. A la que se le ha incorporado una base de datos, a través la API de OMDB, vinculada a través de AJax y de cuyas funcionalidades están dadas desde jQuery. 
-Cabe señalar que la organización de cada paso ha sido registrada en un trello, para que estuviese siempre accesible a todas, además de permitir que cada una fuese agregando y quitando elementos, según se avanzará.
+Cabe señalar que la organización de cada paso ha sido registrada en un trello, para que estuviese siempre accesible a todas, además de permitir que cada una fuese agregando y quitando elementos, según se avanzase.
 ![trello](https://image.ibb.co/eynwnR/trello.png)
 
 ##### Actualmente: 
 Tenemos un producto mínimo viable que permite comprender las funcionalidades básicas del site y conocer visualmente la tipología y paleta de colores elegidos. Además de, en términos prácticos, revisar las funcionalidades con una selección de películas que cumplen con ambos requisitos: ser saga de películas y basarse en sagas de libros.
 
 Sin duda, este no es el final del camino, sino el inicio. Esperamos tener, prontamente, el feedback de nuestros usuarios a través de testeos, lo que nos permitirá incorporar nuevas funcionalidades y elementos que den vida a cada rincón del site, siendo una invitación constante a visitarnos una y otra vez, una sugerencia permanente en reuniones sociales... pero sobre todo y ante todo, el site que en SagaMovie, soñamos tener...
+  
+    
+
+___
 
 
-
+        
+          
 ![LogoSaga](https://image.ibb.co/j8KLE6/sagamovieblack.png)
