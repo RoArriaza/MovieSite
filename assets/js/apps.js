@@ -12,7 +12,11 @@ $(document).ready(function () {
   $('.modal').modal();
 
   pasteMoreSeen();
-// Estrellas de valoración
+  printFantasyMovies();
+  printActionMovies();
+  printSciFiMovies();
+
+  // Estrellas de valoración
   $('#star-rating').starrating();
   $( '#star-rating' ).starrating({
   clearable : true,
@@ -20,14 +24,6 @@ $(document).ready(function () {
   onClick : null,
   showText : true,
   });
-
-  printFantasyMovies();
-  printActionMovies();
-  printSciFiMovies();
-
-
-
-
 });
 
 var titleFld = $('.search');
