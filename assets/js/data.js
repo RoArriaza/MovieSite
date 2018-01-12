@@ -448,6 +448,8 @@ var data = [
   "trailer": "https://www.youtube.com/embed/lzyTbi3zf60?rel=0&amp;controls=0&amp;showinfo=0",
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt0069768",
+  "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BNWRlYjU3ODYtNzAzZS00YWE5LTkxZTEtYjM1YzIwZTlhMWQ2L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+  "año": "1973"
   },
   {
   "nombre": "Planet of the Apes",

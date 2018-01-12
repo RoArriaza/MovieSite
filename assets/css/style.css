@@ -32,6 +32,10 @@
 	margin-top: 18%;
 }
 
+.resultList:hover{
+  cursor: pointer;
+}
+
 .images{
 	width: 10em;
 	height: auto;

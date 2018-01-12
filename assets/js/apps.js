@@ -155,19 +155,19 @@ function printSciFiMovies() {
   $('.images').click(function () {
     window.location.href="inicial.html"
     //url que cambiará según el elemento al que se le haga click
-    var newUrl = 'http://www.omdbapi.com/?i=' + id+ '&apikey=276881c0';
+    var idUrl = 'http://www.omdbapi.com/?i=' + id + '&apikey=276881c0';
 
     console.log(newUrl);
 
     $.ajax({
       type: 'GET',
-      url: newUrl,
-      success: movieInfo,
+      url: idUrl,
+      success: movieInfoData,
       error: renderError
     });
   
   //imprimiendo información de la api en pantalla (inicial.html)
-    function movieInfo(paste) {
+    function movieInfoData(paste) {
       var poster= $('#poster');
       var datos= $('#datos');
       poster.append('<img src="' + paste.Poster + '" alt="poster">');
@@ -207,12 +207,11 @@ function renderMovies (response) {
     resultsUl.append(moviesList);
     titleFld.val('');
   }
-}
 
-  //obteniendo información (titulo de cada pelicula) para mostrar en inicial.html
+    //obteniendo información (titulo de cada pelicula) para mostrar en inicial.html
   $('.resultList').click(function () {
     window.location.href="inicial.html"
-    var str = $('.name').text();
+    var str = $(this).text();
     var replacedStr = str.split(' ').join('+');
 
     console.log(replacedStr);
@@ -242,6 +241,9 @@ function renderMovies (response) {
                   + '</p><a href="' + paste.Website + '">Website Oficial</a>');
     }
   });
+}
+
+
 
 //imprimir error en la consola
 function renderError (error) {
