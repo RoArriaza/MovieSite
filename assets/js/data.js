@@ -682,8 +682,8 @@ var data = [
   "trailer": "https://www.youtube.com/embed/Vso5o11LuGU?rel=0&amp;controls=0&amp;showinfo=0",
   // Buscar trailer de película con subtítulos si es en inglés.
   "id": "tt3183660",
-  "poster": "",
-  "año":""
+  "poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxOTM1OTI4MV5BMl5BanBnXkFtZTgwODE5OTYxMDI@._V1_SX300.jpg",
+  "año":"2016"
   },
 // Superman "Fantasía, Acción"
 
