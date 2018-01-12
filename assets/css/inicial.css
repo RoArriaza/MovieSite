@@ -39,17 +39,8 @@ nav .nav-wrapper {
 	text-align: center;
 }
 
-.fa-star {
-	font-size: 2.3em;
-	padding-right: 10px;
-	color: #afaeae;
-	-webkit-transition: font-size 1s; /* For Safari 3.1 to 6.0 */
-    transition: font-size 1s;
-}
-
-.fa-star:hover{
-	font-size: 2.34em;
-	color:#ffbf00;
+.starsValue{
+	margin-left: 3em;
 }
 
 .comment {
