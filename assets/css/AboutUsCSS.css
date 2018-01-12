@@ -3,6 +3,17 @@
   padding: 0;
   margin: 0;
 }
+
+.logo{
+	background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  margin-top: 0.49em;
+  margin-left: 1em;
+  width: 14em;
+  height: 100%;
+}
+
 .one{
   background-color: #;
   height: 25em;
